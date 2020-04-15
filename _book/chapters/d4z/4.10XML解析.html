@@ -1,0 +1,1969 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>4.10  XML解析 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="4.12本章练习.html" />
+    
+    
+    <link rel="prev" href="4.9上机任务.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../d1z/d1z.html">
+            
+                <a href="../d1z/d1z.html">
+            
+                    
+                    第一章    异常处理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../d1z/1.1异常概述.html">
+            
+                <a href="../d1z/1.1异常概述.html">
+            
+                    
+                    1.1  异常概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../d1z/1.2异常处理.html">
+            
+                <a href="../d1z/1.2异常处理.html">
+            
+                    
+                    1.2  异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../d1z/1.3上机任务.html">
+            
+                <a href="../d1z/1.3上机任务.html">
+            
+                    
+                    1.3  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../d1z/1.4异常使用注意事项.html">
+            
+                <a href="../d1z/1.4异常使用注意事项.html">
+            
+                    
+                    1.4  异常使用注意事项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../d1z/1.5上机任务.html">
+            
+                <a href="../d1z/1.5上机任务.html">
+            
+                    
+                    1.5  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../d1z/1.6抛出异常.html">
+            
+                <a href="../d1z/1.6抛出异常.html">
+            
+                    
+                    1.6  抛出异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.7" data-path="../d1z/1.7上机任务.html">
+            
+                <a href="../d1z/1.7上机任务.html">
+            
+                    
+                    1.7  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.8" data-path="../d1z/1.8自定义异常类.html">
+            
+                <a href="../d1z/1.8自定义异常类.html">
+            
+                    
+                    1.8  自定义异常类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.9" data-path="../d1z/1.9本章练习.html">
+            
+                <a href="../d1z/1.9本章练习.html">
+            
+                    
+                    1.9  本章练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../d2z/d2z.html">
+            
+                <a href="../d2z/d2z.html">
+            
+                    
+                    第二章    数据结构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../d2z/2.1数据逻辑结构.html">
+            
+                <a href="../d2z/2.1数据逻辑结构.html">
+            
+                    
+                    2.1  数据逻辑结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../d2z/2.2数据存储结构.html">
+            
+                <a href="../d2z/2.2数据存储结构.html">
+            
+                    
+                    2.2  数据存储结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../d2z/2.3线性结构.html">
+            
+                <a href="../d2z/2.3线性结构.html">
+            
+                    
+                    2.3  线性结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../d2z/2.4上机任务.html">
+            
+                <a href="../d2z/2.4上机任务.html">
+            
+                    
+                    2.4  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="../d2z/2.5上机任务.html">
+            
+                <a href="../d2z/2.5上机任务.html">
+            
+                    
+                    2.5  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.6" data-path="../d2z/2.6查找.html">
+            
+                <a href="../d2z/2.6查找.html">
+            
+                    
+                    2.6  查找
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.7" data-path="../d2z/2.7上机任务.html">
+            
+                <a href="../d2z/2.7上机任务.html">
+            
+                    
+                    2.7  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.8" data-path="../d2z/2.8本章练习.html">
+            
+                <a href="../d2z/2.8本章练习.html">
+            
+                    
+                    2.8  本章练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../d3z/d3z.html">
+            
+                <a href="../d3z/d3z.html">
+            
+                    
+                    第三章    集合和泛型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../d3z/3.1集合框架.html">
+            
+                <a href="../d3z/3.1集合框架.html">
+            
+                    
+                    3.1  集合框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../d3z/3.2Set接口.html">
+            
+                <a href="../d3z/3.2Set接口.html">
+            
+                    
+                    3.2  Set接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="../d3z/3.3上机任务.html">
+            
+                <a href="../d3z/3.3上机任务.html">
+            
+                    
+                    3.3  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="../d3z/3.4Iterator迭代器.html">
+            
+                <a href="../d3z/3.4Iterator迭代器.html">
+            
+                    
+                    3.4  Iterator迭代器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="../d3z/3.5上机任务.html">
+            
+                <a href="../d3z/3.5上机任务.html">
+            
+                    
+                    3.5  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.6" data-path="../d3z/3.6List接口.html">
+            
+                <a href="../d3z/3.6List接口.html">
+            
+                    
+                    3.6       List接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.7" data-path="../d3z/3.7上机任务.html">
+            
+                <a href="../d3z/3.7上机任务.html">
+            
+                    
+                    3.7  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.8" data-path="../d3z/3.8工具类.html">
+            
+                <a href="../d3z/3.8工具类.html">
+            
+                    
+                    3.8  工具类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.9" data-path="../d3z/3.9上机任务.html">
+            
+                <a href="../d3z/3.9上机任务.html">
+            
+                    
+                    3.9  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.10" data-path="../d3z/3.10Map接口.html">
+            
+                <a href="../d3z/3.10Map接口.html">
+            
+                    
+                    3.10  Map接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.11" data-path="../d3z/3.11上机任务.html">
+            
+                <a href="../d3z/3.11上机任务.html">
+            
+                    
+                    3.11  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.12" data-path="../d3z/3.12自动拆箱和装箱.html">
+            
+                <a href="../d3z/3.12自动拆箱和装箱.html">
+            
+                    
+                    3.12  自动拆箱和装箱
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.13" data-path="../d3z/3.13泛型.html">
+            
+                <a href="../d3z/3.13泛型.html">
+            
+                    
+                    3.13  泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.14" data-path="../d3z/3.14上机任务.html">
+            
+                <a href="../d3z/3.14上机任务.html">
+            
+                    
+                    3.14  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.15" data-path="../d3z/3.15上机任务.html">
+            
+                <a href="../d3z/3.15上机任务.html">
+            
+                    
+                    3.15  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.16" data-path="../d3z/3.16本章练习.html">
+            
+                <a href="../d3z/3.16本章练习.html">
+            
+                    
+                    3.16  本章练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="d4z.html">
+            
+                <a href="d4z.html">
+            
+                    
+                    第四章    IO和XML
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="4.1File类.html">
+            
+                <a href="4.1File类.html">
+            
+                    
+                    4.1  File类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="4.2上机任务.html">
+            
+                <a href="4.2上机任务.html">
+            
+                    
+                    4.2  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" data-path="4.3字节流和字符流.html">
+            
+                <a href="4.3字节流和字符流.html">
+            
+                    
+                    4.3  字节流和字符流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.4" data-path="4.4上机任务.html">
+            
+                <a href="4.4上机任务.html">
+            
+                    
+                    4.4  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.5" data-path="4.5其他流.html">
+            
+                <a href="4.5其他流.html">
+            
+                    
+                    4.5  其他流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.6" data-path="4.6上机任务.html">
+            
+                <a href="4.6上机任务.html">
+            
+                    
+                    4.6  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.7" data-path="4.7上机任务.html">
+            
+                <a href="4.7上机任务.html">
+            
+                    
+                    4.7  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.8" data-path="4.8XML概述.html">
+            
+                <a href="4.8XML概述.html">
+            
+                    
+                    4.8  XML概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.9" data-path="4.9上机任务.html">
+            
+                <a href="4.9上机任务.html">
+            
+                    
+                    4.9  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="5.1.10" data-path="4.10XML解析.html">
+            
+                <a href="4.10XML解析.html">
+            
+                    
+                    4.10  XML解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.11" data-path="4.12本章练习.html">
+            
+                <a href="4.12本章练习.html">
+            
+                    
+                    4.12  本章练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../d5z/d5z.html">
+            
+                <a href="../d5z/d5z.html">
+            
+                    
+                    第五章    反射机制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../d5z/5.1Java反射机制.html">
+            
+                <a href="../d5z/5.1Java反射机制.html">
+            
+                    
+                    5.1  Java反射机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="../d5z/5.2Class类.html">
+            
+                <a href="../d5z/5.2Class类.html">
+            
+                    
+                    5.2  Class类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.3" data-path="../d5z/5.3上机任务.html">
+            
+                <a href="../d5z/5.3上机任务.html">
+            
+                    
+                    5.3  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.4" data-path="../d5z/5.4获取类信息.html">
+            
+                <a href="../d5z/5.4获取类信息.html">
+            
+                    
+                    5.4  获取类信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.5" data-path="../d5z/5.5上机任务.html">
+            
+                <a href="../d5z/5.5上机任务.html">
+            
+                    
+                    5.5  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.6" data-path="../d5z/5.6动态调用.html">
+            
+                <a href="../d5z/5.6动态调用.html">
+            
+                    
+                    5.6  动态调用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.7" data-path="../d5z/5.7上机任务.html">
+            
+                <a href="../d5z/5.7上机任务.html">
+            
+                    
+                    5.7  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.8" data-path="../d5z/5.8操作动态数组.html">
+            
+                <a href="../d5z/5.8操作动态数组.html">
+            
+                    
+                    5.8  操作动态数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.9" data-path="../d5z/5.9上机任务.html">
+            
+                <a href="../d5z/5.9上机任务.html">
+            
+                    
+                    5.9  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.10" data-path="../d5z/5.10本章练习.html">
+            
+                <a href="../d5z/5.10本章练习.html">
+            
+                    
+                    5.10  本章练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../d6z/d6z.html">
+            
+                <a href="../d6z/d6z.html">
+            
+                    
+                    第六章    多线程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1.1" data-path="../d6z/6.1多线程.html">
+            
+                <a href="../d6z/6.1多线程.html">
+            
+                    
+                    6.1  多线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.2" data-path="../d6z/6.2创建和使用线程.html">
+            
+                <a href="../d6z/6.2创建和使用线程.html">
+            
+                    
+                    6.2  创建和使用线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.3" data-path="../d6z/6.3上机任务.html">
+            
+                <a href="../d6z/6.3上机任务.html">
+            
+                    
+                    6.3  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.4" data-path="../d6z/6.4线程控制.html">
+            
+                <a href="../d6z/6.4线程控制.html">
+            
+                    
+                    6.4  线程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.5" data-path="../d6z/6.5上机任务.html">
+            
+                <a href="../d6z/6.5上机任务.html">
+            
+                    
+                    6.5  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.6" data-path="../d6z/6.6共享数据.html">
+            
+                <a href="../d6z/6.6共享数据.html">
+            
+                    
+                    6.6  共享数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.7" data-path="../d6z/6.7上机任务.html">
+            
+                <a href="../d6z/6.7上机任务.html">
+            
+                    
+                    6.7  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.8" data-path="../d6z/6.8本章练习.html">
+            
+                <a href="../d6z/6.8本章练习.html">
+            
+                    
+                    6.8  本章练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../d7z/d7z.html">
+            
+                <a href="../d7z/d7z.html">
+            
+                    
+                    第七章    网络编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1.1" data-path="../d7z/7.1计算机网络.html">
+            
+                <a href="../d7z/7.1计算机网络.html">
+            
+                    
+                    7.1  计算机网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.2" data-path="../d7z/7.2IP地址和域名.html">
+            
+                <a href="../d7z/7.2IP地址和域名.html">
+            
+                    
+                    7.2  IP地址和域名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.3" data-path="../d7z/7.3网络配置.html">
+            
+                <a href="../d7z/7.3网络配置.html">
+            
+                    
+                    7.3  网络配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.4" data-path="../d7z/7.4上机任务.html">
+            
+                <a href="../d7z/7.4上机任务.html">
+            
+                    
+                    7.4  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.5" data-path="../d7z/7.5Java与网络.html">
+            
+                <a href="../d7z/7.5Java与网络.html">
+            
+                    
+                    7.5  Java与网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.6" data-path="../d7z/7.6上机任务.html">
+            
+                <a href="../d7z/7.6上机任务.html">
+            
+                    
+                    7.6  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.7" data-path="../d7z/7.7Socket编程.html">
+            
+                <a href="../d7z/7.7Socket编程.html">
+            
+                    
+                    7.7  Socket编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.8" data-path="../d7z/7.8上机任务.html">
+            
+                <a href="../d7z/7.8上机任务.html">
+            
+                    
+                    7.8  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.9" data-path="../d7z/7.9本章练习.html">
+            
+                <a href="../d7z/7.9本章练习.html">
+            
+                    
+                    7.9  本章练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="9.1" data-path="../d8z/d8z.html">
+            
+                <a href="../d8z/d8z.html">
+            
+                    
+                    第八章    Java注解
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.1.1" data-path="../d8z/8.1Java注解.html">
+            
+                <a href="../d8z/8.1Java注解.html">
+            
+                    
+                    8.1  Java注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.1.2" data-path="../d8z/8.2内建注解.html">
+            
+                <a href="../d8z/8.2内建注解.html">
+            
+                    
+                    8.2  内建注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.1.3" data-path="../d8z/8.3上机任务.html">
+            
+                <a href="../d8z/8.3上机任务.html">
+            
+                    
+                    8.3  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.1.4" data-path="../d8z/8.4自定义注解.html">
+            
+                <a href="../d8z/8.4自定义注解.html">
+            
+                    
+                    8.4  自定义注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.1.5" data-path="../d8z/8.5上机任务.html">
+            
+                <a href="../d8z/8.5上机任务.html">
+            
+                    
+                    8.5  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.1.6" data-path="../d8z/8.6本章练习.html">
+            
+                <a href="../d8z/8.6本章练习.html">
+            
+                    
+                    8.6  本章练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="10.1" data-path="../d9z/d9z.html">
+            
+                <a href="../d9z/d9z.html">
+            
+                    
+                    第九章    软件测试与JUnit
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="10.1.1" data-path="../d9z/9.1JUnit初探.html">
+            
+                <a href="../d9z/9.1JUnit初探.html">
+            
+                    
+                    9.1  JUnit初探
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.1.2" data-path="../d9z/9.2上机任务.html">
+            
+                <a href="../d9z/9.2上机任务.html">
+            
+                    
+                    9.2  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.1.3" data-path="../d9z/9.3JUnit4应用.html">
+            
+                <a href="../d9z/9.3JUnit4应用.html">
+            
+                    
+                    9.3  JUnit4应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.1.4" data-path="../d9z/9.4上机任务.html">
+            
+                <a href="../d9z/9.4上机任务.html">
+            
+                    
+                    9.4  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.1.5" data-path="../d9z/9.5本章练习.html">
+            
+                <a href="../d9z/9.5本章练习.html">
+            
+                    
+                    9.5  本章练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="11.1" data-path="../d10z/d10z.html">
+            
+                <a href="../d10z/d10z.html">
+            
+                    
+                    第十章    拓展阅读（选学）
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.1.1" data-path="../d10z/10.1排序算法.html">
+            
+                <a href="../d10z/10.1排序算法.html">
+            
+                    
+                    10.1  排序算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.1.2" data-path="../d10z/10.2上机任务.html">
+            
+                <a href="../d10z/10.2上机任务.html">
+            
+                    
+                    10.2  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.1.3" data-path="../d10z/10.3常见比较.html">
+            
+                <a href="../d10z/10.3常见比较.html">
+            
+                    
+                    10.3  常见比较
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.1.4" data-path="../d10z/10.4软件测试.html">
+            
+                <a href="../d10z/10.4软件测试.html">
+            
+                    
+                    10.4  软件测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.1.5" data-path="../d10z/10.5线程死锁和协作.html">
+            
+                <a href="../d10z/10.5线程死锁和协作.html">
+            
+                    
+                    10.5  线程死锁和协作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.1.6" data-path="../d10z/10.6上机任务.html">
+            
+                <a href="../d10z/10.6上机任务.html">
+            
+                    
+                    10.6  上机任务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.1.7" data-path="../d10z/10.7Java8新特性简介.html">
+            
+                <a href="../d10z/10.7Java8新特性简介.html">
+            
+                    
+                    10.7  Java 8新特性简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.1.8" data-path="../d10z/10.8本章练习.html">
+            
+                <a href="../d10z/10.8本章练习.html">
+            
+                    
+                    10.8  本章练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >4.10  XML解析</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="410--xml&#x89E3;&#x6790;">4.10  XML&#x89E3;&#x6790;</h2>
+<p>&#x2003;&#x2003;&#x5728;&#x4ECB;&#x7ECD;XML&#x6982;&#x8FF0;&#x4E2D;&#x63D0;&#x5230;&#x8FC7;&#xFF0C;XML&#x6587;&#x6863;&#x7684;&#x5E94;&#x7528;&#x8303;&#x56F4;&#x4E3B;&#x8981;&#x6709;&#x5B58;&#x50A8;&#x6570;&#x636E;&#x3001;&#x7CFB;&#x7EDF;&#x914D;&#x7F6E;&#x548C;&#x6570;&#x636E;&#x4EA4;&#x6362;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x4F5C;&#x4E3A;&#x7A0B;&#x5E8F;&#x5458;&#xFF0C;&#x9700;&#x8981;&#x7F16;&#x5199;&#x7A0B;&#x5E8F;&#x8BFB;&#x53D6;XML&#x6587;&#x6863;&#x4E2D;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x6216;&#x5C06;&#x6570;&#x636E;&#x5199;&#x5165;XML&#x6587;&#x6863;&#x3002;&#x76EE;&#x524D;&#x6700;&#x5E38;&#x7528;&#x7684;XML&#x89E3;&#x6790;&#x6280;&#x672F;&#x6709;&#xFF1A;DOM&#x548C;SAX&#x3002;JDK&#x63D0;&#x4F9B;&#x4E86;JAXP&#x6765;&#x4F7F;&#x7528;DOM&#x548C;SAX&#xFF0C;&#x5176;&#x4E2D;org.w3c.dom&#x662F;W3C&#x63A8;&#x8350;&#x7684;&#x7528;&#x4E8E;&#x4F7F;&#x7528;DOM&#x89E3;&#x6790;XML&#x6587;&#x6863;&#x7684;&#x63A5;&#x53E3;&#xFF0C;org.xml.sax&#x662F;&#x4F7F;&#x7528;SAX&#x89E3;&#x6790;XML&#x6587;&#x6863;&#x7684;&#x63A5;&#x53E3;&#xFF0C;javax.xml.parsers&#x662F;&#x63D0;&#x4F9B;&#x5141;&#x8BB8;&#x5904;&#x7406;XML&#x6587;&#x6863;&#x7684;&#x7C7B;&#xFF0C;&#x652F;&#x6301;DOM&#x548C;SAX&#x3002;&#x672C;&#x7AE0;&#x91CD;&#x70B9;&#x4ECB;&#x7ECD;DOM&#x89E3;&#x6790;&#xFF0C;&#x5BF9;SAX&#x89E3;&#x6790;&#x65B9;&#x6CD5;&#x4EC5;&#x4F5C;&#x7B80;&#x8981;&#x4ECB;&#x7ECD;&#xFF0C;&#x4E0D;&#x5C55;&#x5F00;&#x8BB2;&#x89E3;&#x3002;</p>
+<h3 id="4101--dom&#x6811;">4.10.1  DOM&#x6811;</h3>
+<p>&#x2003;&#x2003;DOM&#xFF08;Document Object Model&#xFF09;&#x662F;XML&#x6587;&#x6863;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x63A5;&#x53E3;&#xFF0C;&#x5B83;&#x5B9A;&#x4E49;&#x4E86;&#x5BF9;XML&#x6587;&#x6863;&#x8FDB;&#x884C;&#x968F;&#x673A;&#x8BBF;&#x95EE;&#x4E0E;&#x64CD;&#x4F5C;&#x7684;&#x65B9;&#x6CD5;&#x3002;DOM&#x662F;&#x4E00;&#x4E2A;&#x4E0E;&#x8BED;&#x8A00;&#x65E0;&#x5173;&#x3001;&#x4E0E;&#x5E73;&#x53F0;&#x65E0;&#x5173;&#x7684;&#x6807;&#x51C6;&#x63A5;&#x53E3;&#x89C4;&#x8303;&#x3002;&#x5229;&#x7528;DOM&#xFF0C;&#x7A0B;&#x5E8F;&#x5F00;&#x53D1;&#x4EBA;&#x5458;&#x53EF;&#x4EE5;&#x52A8;&#x6001;&#x5730;&#x521B;&#x5EFA;XML&#x6587;&#x6863;&#xFF0C;&#x904D;&#x5386;&#x6587;&#x6863;&#x7ED3;&#x6784;&#xFF0C;&#x6DFB;&#x52A0;&#x3001;&#x4FEE;&#x6539;&#x3001;&#x5220;&#x9664;&#x6587;&#x6863;&#x5185;&#x5BB9;&#xFF0C;&#x6539;&#x53D8;&#x6587;&#x6863;&#x7684;&#x663E;&#x793A;&#x65B9;&#x5F0F;&#x7B49;&#x3002;&#x53EF;&#x4EE5;&#x8FD9;&#x6837;&#x8BF4;&#xFF0C;&#x6587;&#x6863;&#x4EE3;&#x8868;&#x7684;&#x662F;&#x6570;&#x636E;&#xFF0C;&#x800C;DOM&#x5219;&#x4EE3;&#x8868;&#x4E86;&#x5982;&#x4F55;&#x53BB;&#x5904;&#x7406;&#x8FD9;&#x4E9B;&#x6570;&#x636E;&#x3002;</p>
+<p>&#x2003;&#x2003;DOM&#x628A;&#x4E00;&#x4E2A;XML&#x6587;&#x6863;&#x6620;&#x5C04;&#x6210;&#x4E00;&#x4E2A;&#x5206;&#x5C42;&#x5BF9;&#x8C61;&#x6A21;&#x578B;&#xFF0C;&#x800C;&#x8FD9;&#x4E2A;&#x5C42;&#x6B21;&#x7684;&#x7ED3;&#x6784;&#xFF0C;&#x662F;&#x4E00;&#x68F5;&#x6839;&#x636E;XML&#x6587;&#x6863;&#x751F;&#x6210;&#x7684;&#x8282;&#x70B9;&#x6811;&#x3002;DOM&#x5728;&#x5BF9;XML&#x6587;&#x6863;&#x8FDB;&#x884C;&#x5206;&#x6790;&#x4E4B;&#x540E;&#xFF0C;&#x4E0D;&#x7BA1;&#x8FD9;&#x4E2A;&#x6587;&#x6863;&#x6709;&#x591A;&#x7B80;&#x5355;&#x6216;&#x591A;&#x590D;&#x6742;&#xFF0C;&#x5176;&#x4E2D;&#x7684;&#x4FE1;&#x606F;&#x90FD;&#x4F1A;&#x88AB;&#x8F6C;&#x5316;&#x6210;&#x4E00;&#x68F5;&#x5BF9;&#x8C61;&#x8282;&#x70B9;&#x6811;&#x3002;&#x5728;&#x8FD9;&#x68F5;&#x8282;&#x70B9;&#x6811;&#x4E2D;&#xFF0C;&#x6709;&#x4E00;&#x4E2A;&#x6839;&#x8282;&#x70B9;&#xFF0C;&#x5176;&#x4ED6;&#x6240;&#x6709;&#x7684;&#x8282;&#x70B9;&#x90FD;&#x662F;&#x6839;&#x8282;&#x70B9;&#x7684;&#x5B50;&#x8282;&#x70B9;&#x3002;&#x8282;&#x70B9;&#x6811;&#x751F;&#x6210;&#x4E4B;&#x540E;&#xFF0C;&#x5C31;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;DOM&#x63A5;&#x53E3;&#x8BBF;&#x95EE;&#x3001;&#x4FEE;&#x6539;&#x3001;&#x6DFB;&#x52A0;&#x3001;&#x5220;&#x9664;&#x6811;&#x4E2D;&#x7684;&#x8282;&#x70B9;&#x6216;&#x5185;&#x5BB9;&#x4E86;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x5BF9;DOM&#x6811;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x4E3B;&#x8981;&#x901A;&#x8FC7;&#x4EE5;&#x4E0B;&#x51E0;&#x4E2A;&#x63A5;&#x53E3;&#x3002;</p>
+<h4 id="1&#xFF0E;node&#x63A5;&#x53E3;">1&#xFF0E;Node&#x63A5;&#x53E3;</h4>
+<p>&#x2003;&#x2003;Node&#x63A5;&#x53E3;&#x5728;&#x6574;&#x4E2A;DOM&#x6811;&#x4E2D;&#x5177;&#x6709;&#x4E3E;&#x8DB3;&#x8F7B;&#x91CD;&#x7684;&#x5730;&#x4F4D;&#xFF0C;DOM&#x63A5;&#x53E3;&#x4E2D;&#x6709;&#x5F88;&#x5927;&#x4E00;&#x90E8;&#x5206;&#x63A5;&#x53E3;&#x662F;&#x4ECE;Node&#x63A5;&#x53E3;&#x7EE7;&#x627F;&#x8FC7;&#x6765;&#x7684;&#xFF0C;&#x4F8B;&#x5982;Document&#xFF08;&#x6839;&#x8282;&#x70B9;&#xFF09;&#x3001;Element&#xFF08;&#x5143;&#x7D20;&#xFF09;&#x3001;Attr&#xFF08;&#x5C5E;&#x6027;&#xFF09;&#x3001;Comment&#xFF08;&#x6CE8;&#x91CA;&#xFF09;&#x3001;Text&#xFF08;&#x5143;&#x7D20;&#x6216;&#x5C5E;&#x6027;&#x7684;&#x6587;&#x672C;&#x5185;&#x5BB9;&#xFF09;&#x7B49;&#x63A5;&#x53E3;&#x90FD;&#x662F;&#x4ECE;Node&#x7EE7;&#x627F;&#x8FC7;&#x6765;&#x7684;&#x3002;&#x5728;DOM&#x6811;&#x4E2D;&#xFF0C;Node&#x63A5;&#x53E3;&#x4EE3;&#x8868;&#x4E86;&#x6811;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x3002;Node&#x63A5;&#x53E3;&#x7684;&#x5E38;&#x7528;&#x65B9;&#x6CD5;&#x5982;&#x4E0B;&#x3002;</p>
+<ul>
+<li>NodeList getChildNodes()</li>
+</ul>
+<p>&#x2003;&#x2003;&#x8FD4;&#x56DE;&#x6B64;&#x8282;&#x70B9;&#x7684;&#x6240;&#x6709;&#x5B50;&#x8282;&#x70B9;&#x7684;NodeList&#x3002;</p>
+<ul>
+<li>Node getFirstChild()</li>
+</ul>
+<p>&#x2003;&#x2003;&#x8FD4;&#x56DE;&#x6B64;&#x8282;&#x70B9;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5B50;&#x8282;&#x70B9;&#x3002;</p>
+<ul>
+<li>Node getLastChild()</li>
+</ul>
+<p>&#x2003;&#x2003;&#x8FD4;&#x56DE;&#x6B64;&#x8282;&#x70B9;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5B50;&#x8282;&#x70B9;&#x3002;</p>
+<ul>
+<li>Node getNextSibling()</li>
+</ul>
+<p>&#x2003;&#x2003;&#x8FD4;&#x56DE;&#x6B64;&#x8282;&#x70B9;&#x4E4B;&#x540E;&#x7684;&#x8282;&#x70B9;&#x3002;</p>
+<ul>
+<li>Node getPreviousSibling()</li>
+</ul>
+<p>&#x2003;&#x2003;&#x8FD4;&#x56DE;&#x6B64;&#x8282;&#x70B9;&#x4E4B;&#x524D;&#x7684;&#x8282;&#x70B9;&#x3002;</p>
+<ul>
+<li>Document getOwnerDocument()</li>
+</ul>
+<p>&#x2003;&#x2003;&#x8FD4;&#x56DE;&#x4E0E;&#x6B64;&#x8282;&#x70B9;&#x76F8;&#x5173;&#x7684;Document&#x5BF9;&#x8C61;&#x3002;</p>
+<ul>
+<li>Node getParentNode(</li>
+</ul>
+<p>&#x2003;&#x2003;&#x8FD4;&#x56DE;&#x6B64;&#x8282;&#x70B9;&#x7684;&#x7236;&#x8282;&#x70B9;&#x3002;</p>
+<ul>
+<li>short getNodeType()</li>
+</ul>
+<p>&#x2003;&#x2003;&#x8FD4;&#x56DE;&#x6B64;&#x8282;&#x70B9;&#x7684;&#x7C7B;&#x578B;&#x3002;</p>
+<ul>
+<li>String getNodeName()</li>
+</ul>
+<p>&#x2003;&#x2003;&#x6839;&#x636E;&#x6B64;&#x8282;&#x70B9;&#x7C7B;&#x578B;&#xFF0C;&#x8FD4;&#x56DE;&#x8282;&#x70B9;&#x540D;&#x79F0;&#x3002;</p>
+<ul>
+<li>String getNodeValue()</li>
+</ul>
+<p>&#x2003;&#x2003;&#x6839;&#x636E;&#x6B64;&#x8282;&#x70B9;&#x7C7B;&#x578B;&#xFF0C;&#x8FD4;&#x56DE;&#x8282;&#x70B9;&#x503C;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x524D;&#x9762;&#x5DF2;&#x7ECF;&#x63D0;&#x5230;&#xFF0C;DOM&#x4E2D;&#x5F88;&#x591A;&#x63A5;&#x53E3;&#x90FD;&#x662F;&#x4ECE;Node&#x63A5;&#x53E3;&#x7EE7;&#x627F;&#x7684;&#xFF0C;&#x6240;&#x4EE5;Node&#x63A5;&#x53E3;&#x62E5;&#x6709;&#x7684;&#x65B9;&#x6CD5;&#x8FD9;&#x4E9B;&#x63A5;&#x53E3;&#x90FD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#x3002;&#x4F46;&#x662F;&#x8FD9;&#x4E9B;&#x4ECE;Node&#x63A5;&#x53E3;&#x7EE7;&#x627F;&#x4E0B;&#x6765;&#x7684;&#x63A5;&#x53E3;&#x53C8;&#x90FD;&#x5404;&#x6709;&#x7279;&#x6027;&#xFF0C;&#x6240;&#x4EE5;Node&#x63A5;&#x53E3;&#x62E5;&#x6709;&#x7684;&#x65B9;&#x6CD5;&#x5728;&#x5404;&#x4E2A;&#x5B50;&#x63A5;&#x53E3;&#x4E0A;&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x542B;&#x4E49;&#x4E0D;&#x5C3D;&#x76F8;&#x540C;&#x3002;&#x4F8B;&#x5982;&#xFF0C;&#x5BF9;&#x4E8E;Element&#xFF08;&#x5143;&#x7D20;&#x63A5;&#x53E3;&#xFF09;&#x7684;getNodeType()&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;Node.ELEMENT_NODE&#x5E38;&#x91CF;&#xFF0C;getNodeName()&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;&#x6807;&#x7B7E;&#x540D;&#x79F0;&#xFF0C;getNodeValue()&#x7684;&#x8FD4;&#x56DE;&#x503C;&#x4E3A;null&#x3002;&#x8868;4.1&#x5217;&#x51FA;&#x4E86;nodeName&#x3001;nodeValue &#x548C; attributes &#x7684;&#x503C;&#x5C06;&#x6839;&#x636E;&#x63A5;&#x53E3;&#x7C7B;&#x578B;&#x7684;&#x4E0D;&#x540C;&#x800C;&#x4E0D;&#x540C;&#xFF0C;&#x8FD9;&#x5BF9;&#x4E8E;XML&#x89E3;&#x6790;&#x7684;&#x521D;&#x5B66;&#x8005;&#x800C;&#x8A00;&#x662F;&#x4E2A;&#x96BE;&#x70B9;&#xFF0C;&#x8BF7;&#x5927;&#x5BB6;&#x52A1;&#x5FC5;&#x7ED3;&#x5408;&#x540E;&#x9762;&#x7684;&#x4F8B;&#x5B50;&#xFF0C;&#x6DF1;&#x523B;&#x7406;&#x89E3;&#x3002;</p>
+<p>&#x8868;4.1  Node&#x5B50;&#x63A5;&#x53E3;&#x5C5E;&#x6027;&#x503C;</p>
+<table>
+<thead>
+<tr>
+<th>Interface</th>
+<th>nodeName</th>
+<th>nodeValue</th>
+<th>attributes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Attr</td>
+<td>&#x4E0E;Attr.name&#x76F8;&#x540C;</td>
+<td>&#x4E0E;Attr.value&#x76F8;&#x540C;</td>
+<td>null</td>
+</tr>
+<tr>
+<td>CDATASection</td>
+<td>&quot;#cdata-section&quot;</td>
+<td>&#x4E0E;CharacterData.data&#x76F8;&#x540C;&#xFF0C;CDATA &#x8282;&#x7684;&#x5185;&#x5BB9;</td>
+<td>null</td>
+</tr>
+<tr>
+<td>Comment</td>
+<td>&quot;#comment&quot;</td>
+<td>&#x4E0E;CharacterData.data&#x76F8;&#x540C;&#xFF0C;&#x8BE5;&#x6CE8;&#x91CA;&#x7684;&#x5185;&#x5BB9;</td>
+<td>null</td>
+</tr>
+<tr>
+<td>Document</td>
+<td>&quot;#document&quot;</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr>
+<td>DocumentFragment</td>
+<td>&quot;#document-fragment&quot;</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr>
+<td>DocumentType</td>
+<td>&#x4E0E;DocumentType.name&#x76F8;&#x540C;</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr>
+<td>Element</td>
+<td>&#x4E0E;Element.tagName&#x76F8;&#x540C;</td>
+<td>null</td>
+<td>NamedNodeMap</td>
+</tr>
+<tr>
+<td>Entity</td>
+<td>entity name</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr>
+<td>EntityReference</td>
+<td>&#x5F15;&#x7528;&#x7684;&#x5B9E;&#x4F53;&#x540D;&#x79F0;</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr>
+<td>Notation</td>
+<td>notation name</td>
+<td>null</td>
+<td>null</td>
+</tr>
+<tr>
+<td>ProcessingInstruction</td>
+<td>&#x4E0E;ProcessingInstruction.target&#x76F8;&#x540C;</td>
+<td>&#x4E0E;ProcessingInstruction.data&#x76F8;&#x540C;</td>
+<td>null</td>
+</tr>
+<tr>
+<td>Text</td>
+<td>&quot;#text&quot;</td>
+<td>&#x4E0E;CharacterData.data&#x76F8;&#x540C;&#xFF0C;&#x8BE5;&#x6587;&#x672C;&#x8282;&#x70B9;&#x7684;&#x5185;&#x5BB9;</td>
+<td>null</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>String getTextContent()  </li>
+</ul>
+<p>&#x2003;&#x2003;&#x8FD4;&#x56DE;&#x6B64;&#x8282;&#x70B9;&#x7684;&#x6587;&#x672C;&#x5185;&#x5BB9;&#x3002;  </p>
+<ul>
+<li>void setNodeValue(String nodeValue)  </li>
+</ul>
+<p>&#x2003;&#x2003;&#x6839;&#x636E;&#x6B64;&#x8282;&#x70B9;&#x7C7B;&#x578B;&#xFF0C;&#x8BBE;&#x7F6E;&#x8282;&#x70B9;&#x503C;&#x3002;  </p>
+<ul>
+<li>void setTextContent(String textContent)  </li>
+</ul>
+<p>&#x2003;&#x2003;&#x8BBE;&#x7F6E;&#x6B64;&#x8282;&#x70B9;&#x7684;&#x6587;&#x672C;&#x5185;&#x5BB9;&#x3002;  </p>
+<ul>
+<li>Node appendChild(Node newChild)  </li>
+</ul>
+<p>&#x2003;&#x2003;&#x5C06;&#x8282;&#x70B9;newChild&#x6DFB;&#x52A0;&#x5230;&#x6B64;&#x8282;&#x70B9;&#x7684;&#x5B50;&#x8282;&#x70B9;&#x5217;&#x8868;&#x7684;&#x672B;&#x5C3E;&#x3002;  </p>
+<ul>
+<li>Node insertBefore(Node newChild,Node refChild)  </li>
+</ul>
+<p>&#x2003;&#x2003;&#x5728;&#x73B0;&#x6709;&#x5B50;&#x8282;&#x70B9;refChild&#x4E4B;&#x524D;&#x63D2;&#x5165;&#x8282;&#x70B9;newChild&#x3002;  </p>
+<ul>
+<li>Node removeChild(Node oldChild)  </li>
+</ul>
+<p>&#x2003;&#x2003;&#x4ECE;&#x5B50;&#x8282;&#x70B9;&#x5217;&#x8868;&#x4E2D;&#x79FB;&#x9664;oldChild&#x6240;&#x6307;&#x793A;&#x7684;&#x5B50;&#x8282;&#x70B9;&#xFF0C;&#x5E76;&#x5C06;&#x5176;&#x8FD4;&#x56DE;&#x3002;  </p>
+<ul>
+<li>Node replaceChild(Node newChild, oldChild)  </li>
+</ul>
+<p>&#x2003;&#x2003;&#x5C06;&#x5B50;&#x8282;&#x70B9;&#x5217;&#x8868;&#x4E2D;&#x7684;&#x5B50;&#x8282;&#x70B9;oldChild&#x66FF;&#x6362;&#x4E3A;newChild&#xFF0C;&#x5E76;&#x8FD4;&#x56DE;oldChild&#x8282;&#x70B9;&#x3002;  </p>
+<h4 id="2&#xFF0E;document&#x63A5;&#x53E3;">2&#xFF0E;Document&#x63A5;&#x53E3;</h4>
+<p>&#x2003;&#x2003;Document&#x63A5;&#x53E3;&#x8868;&#x793A;DOM&#x6811;&#x4E2D;&#x7684;&#x6839;&#x8282;&#x70B9;&#xFF0C;&#x5373;&#x5BF9;XML&#x6587;&#x6863;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#x7684;&#x5165;&#x53E3;&#x8282;&#x70B9;&#x3002;&#x901A;&#x8FC7;Document&#x8282;&#x70B9;&#xFF0C;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x5230;&#x6587;&#x6863;&#x4E2D;&#x7684;&#x5176;&#x4ED6;&#x8282;&#x70B9;&#x3002;Document&#x63A5;&#x53E3;&#x7684;&#x5E38;&#x7528;&#x65B9;&#x6CD5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ul>
+<li>Element getDocumentElement()</li>
+</ul>
+<p>&#x2003;&#x2003;&#x8FD4;&#x56DE;&#x4EE3;&#x8868;&#x8FD9;&#x4E2A;DOM&#x6811;&#x6839;&#x8282;&#x70B9;&#x7684;Element&#x5BF9;&#x8C61;&#x3002;</p>
+<ul>
+<li>NodeList getElementsByTagName(String tagname)</li>
+</ul>
+<p>&#x2003;&#x2003;&#x6309;&#x6587;&#x6863;&#x987A;&#x5E8F;&#x8FD4;&#x56DE;&#x5305;&#x542B;&#x5728;&#x6587;&#x6863;&#x4E2D;&#x4E14;&#x5177;&#x6709;&#x7ED9;&#x5B9A;&#x6807;&#x8BB0;&#x540D;&#x79F0;&#x7684;&#x6240;&#x6709;Element&#x7684;NodeList&#x3002;</p>
+<h4 id="3&#xFF0E;nodelist&#x63A5;&#x53E3;">3&#xFF0E;NodeList&#x63A5;&#x53E3;</h4>
+<p>&#x2003;&#x2003;NodeList&#x63A5;&#x53E3;&#x63D0;&#x4F9B;&#x4E86;&#x5BF9;&#x8282;&#x70B9;&#x96C6;&#x5408;&#x7684;&#x62BD;&#x8C61;&#x5B9A;&#x4E49;&#xFF0C;&#x5305;&#x542B;&#x4E86;&#x4E00;&#x4E2A;&#x6216;&#x591A;&#x4E2A;&#x8282;&#x70B9;&#xFF08;Node&#xFF09;&#x7684;&#x6709;&#x5E8F;&#x96C6;&#x5408;&#x3002;NodeList&#x63A5;&#x53E3;&#x7684;&#x5E38;&#x7528;&#x65B9;&#x6CD5;&#x5982;&#x4E0B;&#x3002;</p>
+<ul>
+<li>int getLength()</li>
+</ul>
+<p>&#x2003;&#x2003;&#x8FD4;&#x56DE;&#x6709;&#x5E8F;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x8282;&#x70B9;&#x6570;&#x3002;</p>
+<ul>
+<li>Node item(int index)</li>
+</ul>
+<p>&#x2003;&#x2003;&#x8FD4;&#x56DE;&#x6709;&#x5E8F;&#x96C6;&#x5408;&#x4E2D;&#x7684;&#x7B2C;index&#x4E2A;&#x9879;&#x3002;</p>
+<h3 id="4102--dom&#x89E3;&#x6790;xml">4.10.2  DOM&#x89E3;&#x6790;XML</h3>
+<p>&#x2003;&#x2003;&#x4F7F;&#x7528;DOM&#x89E3;&#x6790;XML&#x6587;&#x6863;&#x7684;&#x6B65;&#x9AA4;&#x5982;&#x4E0B;&#x3002;</p>
+<p>&#x2003;&#x2003;&#xFF08;1&#xFF09;&#x521B;&#x5EFA;&#x89E3;&#x6790;&#x5668;&#x5DE5;&#x5382;&#xFF0C;&#x5373;DocumentBuilderFactory&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x2003;&#x2003;&#xFF08;2&#xFF09;&#x901A;&#x8FC7;&#x89E3;&#x6790;&#x5668;&#x5DE5;&#x5382;&#x83B7;&#x5F97;DOM&#x89E3;&#x6790;&#x5668;&#xFF0C;&#x5373;DocumentBuilder&#x5BF9;&#x8C61;&#x3002;</p>
+<p>&#x2003;&#x2003;&#xFF08;3&#xFF09;&#x89E3;&#x6790;&#x6307;&#x5B9A;XML&#x6587;&#x6863;&#xFF0C;&#x5F97;&#x5230;DOM&#x8282;&#x70B9;&#x6811;&#x3002;</p>
+<p>&#x2003;&#x2003;&#xFF08;4&#xFF09;&#x5BF9;DOM&#x8282;&#x70B9;&#x6811;&#x8FDB;&#x884C;&#x64CD;&#x4F5C;&#xFF0C;&#x5B8C;&#x6210;&#x5BF9;XML&#x6587;&#x6863;&#x7684;&#x589E;&#x5220;&#x6539;&#x67E5;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x4E0B;&#x9762;&#x4F7F;&#x7528;DOM&#x5BF9;&#x4E4B;&#x524D;&#x7F16;&#x5199;&#x7684;&#x7528;&#x4E8E;&#x5B58;&#x653E;&#x201C;&#x79DF;&#x8F66;&#x7CFB;&#x7EDF;&#x201D;&#x8F66;&#x8F86;&#x4FE1;&#x606F;&#x7684;vehicles.xml&#x6587;&#x6863;&#x8FDB;&#x884C;&#x89E3;&#x6790;&#xFF0C;&#x5E76;&#x8F93;&#x51FA;&#x201C;&#x79DF;&#x8F66;&#x7CFB;&#x7EDF;&#x201D;&#x4E2D;&#x6709;&#x51E0;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x8F66;&#xFF0C;&#x201C;&#x79DF;&#x8F66;&#x7CFB;&#x7EDF;&#x201D;&#x4E2D;&#x6709;&#x51E0;&#x8F86;&#x5361;&#x8F66;&#xFF0C;&#x5E76;&#x8BE6;&#x7EC6;&#x8F93;&#x51FA;&#x6BCF;&#x8F86;&#x5361;&#x8F66;&#x7684;id&#x5C5E;&#x6027;&#x53CA;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#xFF0C;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x56FE;4.8&#x6240;&#x793A;&#x3002;</p>
+<p align="center"><img src="../../img/d4z/tu4.8.png"></p>  
+<p align="center">&#x56FE;4.8  &#x4F7F;&#x7528;DOM&#x89E3;&#x6790;vehicles.xml</p>  
+
+
+
+<p>&#x2003;&#x2003;&#x5177;&#x4F53;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF08;&#x9700;&#x8981;&#x5927;&#x5BB6;&#x8BA4;&#x771F;&#x9605;&#x8BFB;&#x4EE3;&#x7801;&#x4E2D;&#x7684;&#x6CE8;&#x91CA;&#xFF0C;&#x7406;&#x89E3;&#x542B;&#x4E49;&#xFF09;&#xFF1A;</p>
+<pre><code>import java.io.*;
+
+import javax.xml.parsers.*;
+
+import org.w3c.dom.*;
+
+import org.xml.sax.SAXException;
+
+public class TestDOM {
+
+&#x200B;         public static void main(String[] args) {
+
+&#x200B;                  try {
+
+&#x200B;                           //&#x521B;&#x5EFA;&#x89E3;&#x6790;&#x5668;&#x5DE5;&#x5382;
+
+&#x200B;                           DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+
+&#x200B;                           //&#x901A;&#x8FC7;&#x89E3;&#x6790;&#x5668;&#x5DE5;&#x5382;&#x83B7;&#x5F97;DOM&#x89E3;&#x6790;&#x5668;
+
+&#x200B;                           DocumentBuilder db = dbf.newDocumentBuilder();
+
+&#x200B;                           //&#x89E3;&#x6790;&#x6307;&#x5B9A;XML&#x6587;&#x6863;&#xFF0C;&#x5F97;&#x5230;DOM&#x8282;&#x70B9;&#x6811;
+
+&#x200B;                           Document doc = db.parse(&quot;vehicles.xml&quot;);
+
+&#x200B;                           //&#x5F97;&#x5230;&#x6839;&#x8282;&#x70B9;&#x4E0B;&#x7684;&#x6240;&#x6709;&#x5B50;&#x8282;&#x70B9;
+
+&#x200B;                           NodeList vehicles = doc.getChildNodes();
+
+&#x200B;                           System.out.println(&quot;&#x201C;&#x79DF;&#x8F66;&#x7CFB;&#x7EDF;&#x201D;&#x4E2D;&#x5171;&#x6709;&quot; + vehicles.getLength() + &quot;&#x79CD;&#x7C7B;&#x578B;&#x7684;&#x8F66;&#xFF01;&quot;);
+
+&#x200B;                           //&#x5F97;&#x5230;&#x6240;&#x6709;&lt;truck&gt;&#x8282;&#x70B9;&#x5217;&#x8868;&#x4FE1;&#x606F;
+
+&#x200B;                           NodeList truckList = doc.getElementsByTagName(&quot;truck&quot;);                         
+
+&#x200B;                           System.out.println(&quot;&#x201C;&#x79DF;&#x8F66;&#x7CFB;&#x7EDF;&#x201D;&#x4E2D;&#x5171;&#x6709;&quot; + truckList.getLength() + &quot;&#x8F86;&#x5361;&#x8F66;&#xFF01;&quot;);
+
+&#x200B;                           //&#x904D;&#x5386;&#x6240;&#x6709;&#x5361;&#x8F66;
+
+&#x200B;                           for (int i = 0; i &lt; truckList.getLength(); i++) {
+
+&#x200B;                                    //&#x83B7;&#x53D6;&#x7D22;&#x5F15;&#x4E3A;i&#x7684;&#x5361;&#x8F66;
+
+&#x200B;                                    Node truck = truckList.item(i);
+
+&#x200B;                                    //&#x83B7;&#x53D6;&#x5361;&#x8F66;&#x5C5E;&#x6027;&#x503C;&#x5E76;&#x663E;&#x793A;
+
+&#x200B;                                    Element element = (Element) truck;
+
+&#x200B;                                    String idValue = element.getAttribute(&quot;id&quot;);
+
+&#x200B;                                    //&#x4EE5;&#x4E0B;&#x901A;&#x8FC7;&#x5C5E;&#x6027;&#x503C;&#x83B7;&#x5F97;&#x5C5E;&#x6027;&#x8282;&#x70B9;&#xFF0C;&#x518D;&#x901A;&#x8FC7;&#x5C5E;&#x6027;&#x8282;&#x70B9;getNodeValue()&#x83B7;&#x5F97;&#x5C5E;&#x6027;&#x503C;
+
+&#x200B;                                    //Node attr = element.getAttributeNode(&quot;id&quot;);
+
+&#x200B;                                    //String idValue = attr.getNodeValue();
+
+&#x200B;                                    System.out.println(&quot;id&#x4E3A;&quot; + idValue + &quot;&#x7684;&#x5361;&#x8F66;&#x4FE1;&#x606F;&#x4E3A;&#xFF1A;&quot;);
+
+&#x200B;                                    //&#x83B7;&#x53D6;&#x7D22;&#x5F15;&#x4E3A;i&#x7684;&#x5361;&#x8F66;&#x8BE6;&#x7EC6;&#x4FE1;&#x606F;&#x5E76;&#x8F93;&#x51FA;
+
+&#x200B;                                    for (Node node = truck.getFirstChild(); node != null; node = node.getNextSibling()) {
+
+&#x200B;                                             //&#x6839;&#x636E;&#x8282;&#x70B9;&#x7C7B;&#x578B;&#x8FDB;&#x884C;&#x5224;&#x65AD;&#xFF0C;&#x663E;&#x793A;&#x5143;&#x7D20;&#x8282;&#x70B9;&#x4FE1;&#x606F;&#xFF0C;&#x4F8B;&#x5982; &lt;oil&gt;20&lt;/oil&gt;
+
+&#x200B;                                             if (node.getNodeType() == Node.ELEMENT_NODE){
+
+&#x200B;                                                      //&#x5143;&#x7D20;&#x8282;&#x70B9;&#x7684;&#x8282;&#x70B9;&#x540D;&#x5373;&#x4E3A;&#x6807;&#x7B7E;&#x540D;&#xFF0C;&#x4F8B;&#x5982;oil
+
+&#x200B;                                                      String name = node.getNodeName();
+
+&#x200B;                                                      //&#x5143;&#x7D20;&#x8282;&#x70B9;&lt;oil&gt;20&lt;/oil&gt;&#x4E0B;&#x7B2C;&#x4E00;&#x4E2A;&#x5B50;&#x8282;&#x70B9;&#x4E3A;&#x6587;&#x672C;&#x8282;&#x70B9;20&#xFF0C;&#x5F97;&#x5230;&#x8282;&#x70B9;&#x503C;20
+
+&#x200B;                                                      String value = node.getFirstChild().getNodeValue();
+
+&#x200B;                                                      System.out.println(&quot;  &quot; + name + &quot;&#xFF1A;&quot; + value + &quot;&#xFF1B;&quot;);
+
+&#x200B;                                             }
+
+&#x200B;                                    }
+
+&#x200B;                           }
+
+&#x200B;                  } catch (ParserConfigurationException e) {
+
+&#x200B;                           e.printStackTrace();
+
+&#x200B;                  } catch (SAXException e) {
+
+&#x200B;                           e.printStackTrace();
+
+&#x200B;                  } catch (IOException e) {
+
+&#x200B;                           e.printStackTrace();
+
+&#x200B;                  }
+
+&#x200B;         }
+
+}
+</code></pre><p>&#x2003;&#x2003;&#x5728;&#x4E0A;&#x9762;&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#xFF0C;&#x7528;&#x5230;&#x4E86;&#x6839;&#x8282;&#x70B9;&#x3001;&#x5C5E;&#x6027;&#x8282;&#x70B9;&#x3001;&#x5143;&#x7D20;&#x8282;&#x70B9;&#x548C;&#x6587;&#x672C;&#x8282;&#x70B9;&#xFF0C;&#x5B83;&#x4EEC;&#x7684;nodeName&#x3001;nodeValue&#x548C;attributes &#x7684;&#x503C;&#x542B;&#x4E49;&#x5404;&#x4E0D;&#x76F8;&#x540C;&#xFF0C;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x3002;</p>
+<h3 id="4103--sax&#x89E3;&#x6790;xml">4.10.3  SAX&#x89E3;&#x6790;XML</h3>
+<p>&#x2003;&#x2003;&#x76F8;&#x6BD4;&#x4E8E;DOM&#xFF0C;SAX&#xFF08;Simple API for XML&#xFF09;&#x662F;&#x4E00;&#x79CD;&#x901F;&#x5EA6;&#x66F4;&#x5FEB;&#x3001;&#x66F4;&#x6709;&#x6548;&#x7684;&#x89E3;&#x6790;XML&#x6587;&#x6863;&#x7684;&#x65B9;&#x6CD5;&#x3002;&#x5B83;&#x4E0D;&#x9700;&#x8981;&#x4E00;&#x6B21;&#x6027;&#x5EFA;&#x7ACB;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;DOM&#x6811;&#xFF0C;&#x800C;&#x662F;&#x8BFB;&#x53D6;&#x6587;&#x6863;&#x65F6;&#x6FC0;&#x6D3B;&#x4E8B;&#x4EF6;&#x8FDB;&#x884C;&#x5904;&#x7406;&#x3002;</p>
+<p>&#x2003;&#x2003;DOM&#x662F;W3C&#x6807;&#x51C6;&#xFF0C;&#x63D0;&#x4F9B;&#x7684;&#x662F;&#x6807;&#x51C6;&#x7684;&#x89E3;&#x6790;&#x65B9;&#x5F0F;&#xFF0C;&#x4F46;&#x5176;&#x89E3;&#x6790;&#x6548;&#x7387;&#x4E00;&#x76F4;&#x4E0D;&#x5C3D;&#x5982;&#x4EBA;&#x610F;&#x3002;&#x8FD9;&#x662F;&#x56E0;&#x4E3A;DOM&#x89E3;&#x6790;XML&#x6587;&#x6863;&#x65F6;&#xFF0C;&#x628A;&#x6240;&#x6709;&#x5185;&#x5BB9;&#x4E00;&#x6B21;&#x6027;&#x88C5;&#x8F7D;&#x5165;&#x5185;&#x5B58;&#xFF0C;&#x5E76;&#x6784;&#x5EFA;&#x4E00;&#x4E2A;&#x9A7B;&#x7559;&#x5728;&#x5185;&#x5B58;&#x4E2D;&#x7684;&#x8282;&#x70B9;&#x6811;&#x3002;&#x5982;&#x679C;&#x9700;&#x8981;&#x89E3;&#x6790;&#x7684;XML&#x6587;&#x6863;&#x8FC7;&#x5927;&#xFF0C;&#x6216;&#x8005;&#x53EA;&#x5BF9;&#x8BE5;&#x6587;&#x6863;&#x4E2D;&#x7684;&#x4E00;&#x90E8;&#x5206;&#x5185;&#x5BB9;&#x611F;&#x5174;&#x8DA3;&#xFF0C;&#x8FD9;&#x79CD;&#x505A;&#x6CD5;&#x5C31;&#x4F1A;&#x5F15;&#x8D77;&#x6027;&#x80FD;&#x95EE;&#x9898;&#x3002;</p>
+<p>&#x2003;&#x2003;SAX&#x65E2;&#x662F;&#x4E00;&#x4E2A;&#x63A5;&#x53E3;&#xFF0C;&#x4E5F;&#x662F;&#x4E00;&#x4E2A;&#x8F6F;&#x4EF6;&#x5305;&#x3002;SAX&#x5728;&#x89E3;&#x6790;XML&#x65F6;&#x662F;&#x4E8B;&#x4EF6;&#x9A71;&#x52A8;&#x578B;&#x7684;&#xFF0C;&#x5B83;&#x7684;&#x5DE5;&#x4F5C;&#x539F;&#x7406;&#x7B80;&#x5355;&#x5730;&#x8BF4;&#x5C31;&#x662F;&#x5BF9;&#x6587;&#x6863;&#x8FDB;&#x884C;&#x987A;&#x5E8F;&#x626B;&#x63CF;&#xFF0C;&#x5F53;&#x626B;&#x63CF;&#x5230;&#x6587;&#x6863;&#x5F00;&#x59CB;&#x4E0E;&#x7ED3;&#x675F;&#x3001;&#x5143;&#x7D20;&#x5F00;&#x59CB;&#x4E0E;&#x7ED3;&#x675F;&#x7B49;&#x5730;&#x65B9;&#x65F6;&#x901A;&#x77E5;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#xFF0C;&#x7531;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x505A;&#x76F8;&#x5E94;&#x52A8;&#x4F5C;&#xFF0C;&#x7136;&#x540E;&#x7EE7;&#x7EED;&#x540C;&#x6837;&#x7684;&#x626B;&#x63CF;&#xFF0C;&#x76F4;&#x81F3;&#x6587;&#x6863;&#x7ED3;&#x675F;&#x3002;SAX&#x7684;&#x7F3A;&#x70B9;&#x4E5F;&#x5F88;&#x660E;&#x663E;&#xFF0C;&#x8981;&#x7528;SAX&#x5BF9;XML&#x6587;&#x6863;&#x8FDB;&#x884C;&#x89E3;&#x6790;&#x65F6;&#xFF0C;&#x5C31;&#x8981;&#x5B9E;&#x73B0;&#x591A;&#x4E2A;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x7528;&#x6765;&#x5904;&#x7406;&#x53EF;&#x80FD;&#x89E6;&#x53D1;&#x7684;&#x4E8B;&#x4EF6;&#xFF0C;&#x5BF9;&#x7A0B;&#x5E8F;&#x5458;&#x800C;&#x8A00;&#x64CD;&#x4F5C;&#x8D77;&#x6765;&#x76F8;&#x5BF9;&#x590D;&#x6742;&#x3002;</p>
+<h2 id="11--&#x4E0A;&#x673A;&#x4EFB;&#x52A1;">.11  &#x4E0A;&#x673A;&#x4EFB;&#x52A1;</h2>
+<p>&#x76EE;&#x6807;&#xFF1A;&#x5B8C;&#x6210;&#x672C;&#x7AE0;4.10&#x8282;&#x7684;&#x7A0B;&#x5E8F;&#x3002;</p>
+<p>&#x65F6;&#x95F4;&#xFF1A;30&#x5206;&#x949F;&#x3002;</p>
+<p>&#x5F62;&#x5F0F;&#xFF1A;&#x6BCF;&#x4E2A;&#x5B66;&#x5458;&#x72EC;&#x7ACB;&#x5B8C;&#x6210;&#xFF0C;&#x5C0F;&#x7EC4;&#x7EC4;&#x957F;&#x68C0;&#x67E5;&#x3002;</p>
+<p>&#x5DE5;&#x5177;&#xFF1A;EditPlus&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="4.9上机任务.html" class="navigation navigation-prev " aria-label="Previous page: 4.9  上机任务">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="4.12本章练习.html" class="navigation navigation-next " aria-label="Next page: 4.12  本章练习">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"4.10  XML解析","level":"5.1.10","depth":2,"next":{"title":"4.12  本章练习","level":"5.1.11","depth":2,"path":"chapters/d4z/4.12本章练习.md","ref":"chapters/d4z/4.12本章练习.md","articles":[]},"previous":{"title":"4.9  上机任务","level":"5.1.9","depth":2,"path":"chapters/d4z/4.9上机任务.md","ref":"chapters/d4z/4.9上机任务.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/d4z/4.10XML解析.md","mtime":"2020-04-15T14:38:59.209Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-15T15:00:41.879Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
