@@ -1,0 +1,1627 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>6.4  共享数据 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="6.5本章练习.html" />
+    
+    
+    <link rel="prev" href="6.3线程控制.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    目录
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../d1z/d1z.html">
+            
+                <a href="../d1z/d1z.html">
+            
+                    
+                    第一章    异常处理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../d1z/1.1异常概述.html">
+            
+                <a href="../d1z/1.1异常概述.html">
+            
+                    
+                    1.1  异常概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../d1z/1.2异常处理.html">
+            
+                <a href="../d1z/1.2异常处理.html">
+            
+                    
+                    1.2  异常处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../d1z/1.3异常使用注意事项.html">
+            
+                <a href="../d1z/1.3异常使用注意事项.html">
+            
+                    
+                    1.3  异常使用注意事项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../d1z/1.4抛出异常.html">
+            
+                <a href="../d1z/1.4抛出异常.html">
+            
+                    
+                    1.4  抛出异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.5" data-path="../d1z/1.5自定义异常类.html">
+            
+                <a href="../d1z/1.5自定义异常类.html">
+            
+                    
+                    1.5  自定义异常类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.6" data-path="../d1z/1.6本章练习.html">
+            
+                <a href="../d1z/1.6本章练习.html">
+            
+                    
+                    1.6  本章练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../d2z/d2z.html">
+            
+                <a href="../d2z/d2z.html">
+            
+                    
+                    第二章    数据结构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1.1" data-path="../d2z/2.1数据逻辑结构.html">
+            
+                <a href="../d2z/2.1数据逻辑结构.html">
+            
+                    
+                    2.1  数据逻辑结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.2" data-path="../d2z/2.2数据存储结构.html">
+            
+                <a href="../d2z/2.2数据存储结构.html">
+            
+                    
+                    2.2  数据存储结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.3" data-path="../d2z/2.3线性结构.html">
+            
+                <a href="../d2z/2.3线性结构.html">
+            
+                    
+                    2.3  线性结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.4" data-path="../d2z/2.4查找.html">
+            
+                <a href="../d2z/2.4查找.html">
+            
+                    
+                    2.4  查找
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.1.5" data-path="../d2z/2.5本章练习.html">
+            
+                <a href="../d2z/2.5本章练习.html">
+            
+                    
+                    2.5  本章练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../d3z/d3z.html">
+            
+                <a href="../d3z/d3z.html">
+            
+                    
+                    第三章    集合和泛型
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1.1" data-path="../d3z/3.1集合框架.html">
+            
+                <a href="../d3z/3.1集合框架.html">
+            
+                    
+                    3.1  集合框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.2" data-path="../d3z/3.2Set接口.html">
+            
+                <a href="../d3z/3.2Set接口.html">
+            
+                    
+                    3.2  Set接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.3" data-path="../d3z/3.3Iterator迭代器.html">
+            
+                <a href="../d3z/3.3Iterator迭代器.html">
+            
+                    
+                    3.3  Iterator迭代器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.4" data-path="../d3z/3.4List接口.html">
+            
+                <a href="../d3z/3.4List接口.html">
+            
+                    
+                    3.4   List接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.5" data-path="../d3z/3.5工具类.html">
+            
+                <a href="../d3z/3.5工具类.html">
+            
+                    
+                    3.5  工具类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.6" data-path="../d3z/3.6Map接口.html">
+            
+                <a href="../d3z/3.6Map接口.html">
+            
+                    
+                    3.6  Map接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.7" data-path="../d3z/3.7自动拆箱和装箱.html">
+            
+                <a href="../d3z/3.7自动拆箱和装箱.html">
+            
+                    
+                    3.7  自动拆箱和装箱
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.8" data-path="../d3z/3.8泛型.html">
+            
+                <a href="../d3z/3.8泛型.html">
+            
+                    
+                    3.8  泛型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.1.9" data-path="../d3z/3.9本章练习.html">
+            
+                <a href="../d3z/3.9本章练习.html">
+            
+                    
+                    3.9  本章练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../d4z/d4z.html">
+            
+                <a href="../d4z/d4z.html">
+            
+                    
+                    第四章    IO和XML
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1.1" data-path="../d4z/4.1File类.html">
+            
+                <a href="../d4z/4.1File类.html">
+            
+                    
+                    4.1  File类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.2" data-path="../d4z/4.2字节流和字符流.html">
+            
+                <a href="../d4z/4.2字节流和字符流.html">
+            
+                    
+                    4.2  字节流和字符流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.3" data-path="../d4z/4.3其他流.html">
+            
+                <a href="../d4z/4.3其他流.html">
+            
+                    
+                    4.3  其他流
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.4" data-path="../d4z/4.4XML概述.html">
+            
+                <a href="../d4z/4.4XML概述.html">
+            
+                    
+                    4.4  XML概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.5" data-path="../d4z/4.5XML解析.html">
+            
+                <a href="../d4z/4.5XML解析.html">
+            
+                    
+                    4.5  XML解析
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.1.6" data-path="../d4z/4.6本章练习.html">
+            
+                <a href="../d4z/4.6本章练习.html">
+            
+                    
+                    4.6  本章练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../d5z/d5z.html">
+            
+                <a href="../d5z/d5z.html">
+            
+                    
+                    第五章    反射机制
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="6.1.1" data-path="../d5z/5.1Java反射机制.html">
+            
+                <a href="../d5z/5.1Java反射机制.html">
+            
+                    
+                    5.1  Java反射机制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.2" data-path="../d5z/5.2Class类.html">
+            
+                <a href="../d5z/5.2Class类.html">
+            
+                    
+                    5.2  Class类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.3" data-path="../d5z/5.3获取类信息.html">
+            
+                <a href="../d5z/5.3获取类信息.html">
+            
+                    
+                    5.3  获取类信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.4" data-path="../d5z/5.4动态调用.html">
+            
+                <a href="../d5z/5.4动态调用.html">
+            
+                    
+                    5.4  动态调用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.5" data-path="../d5z/5.5操作动态数组.html">
+            
+                <a href="../d5z/5.5操作动态数组.html">
+            
+                    
+                    5.5  操作动态数组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.1.6" data-path="../d5z/5.6本章练习.html">
+            
+                <a href="../d5z/5.6本章练习.html">
+            
+                    
+                    5.6  本章练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="d6z.html">
+            
+                <a href="d6z.html">
+            
+                    
+                    第六章    多线程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="7.1.1" data-path="6.1多线程.html">
+            
+                <a href="6.1多线程.html">
+            
+                    
+                    6.1  多线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.2" data-path="6.2创建和使用线程.html">
+            
+                <a href="6.2创建和使用线程.html">
+            
+                    
+                    6.2  创建和使用线程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.3" data-path="6.3线程控制.html">
+            
+                <a href="6.3线程控制.html">
+            
+                    
+                    6.3  线程控制
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="7.1.4" data-path="6.4共享数据.html">
+            
+                <a href="6.4共享数据.html">
+            
+                    
+                    6.4  共享数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.1.5" data-path="6.5本章练习.html">
+            
+                <a href="6.5本章练习.html">
+            
+                    
+                    6.5  本章练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../d7z/d7z.html">
+            
+                <a href="../d7z/d7z.html">
+            
+                    
+                    第七章    网络编程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="8.1.1" data-path="../d7z/7.1计算机网络.html">
+            
+                <a href="../d7z/7.1计算机网络.html">
+            
+                    
+                    7.1  计算机网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.2" data-path="../d7z/7.2IP地址和域名.html">
+            
+                <a href="../d7z/7.2IP地址和域名.html">
+            
+                    
+                    7.2  IP地址和域名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.3" data-path="../d7z/7.3网络配置.html">
+            
+                <a href="../d7z/7.3网络配置.html">
+            
+                    
+                    7.3  网络配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.4" data-path="../d7z/7.4Java与网络.html">
+            
+                <a href="../d7z/7.4Java与网络.html">
+            
+                    
+                    7.4  Java与网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.5" data-path="../d7z/7.5Socket编程.html">
+            
+                <a href="../d7z/7.5Socket编程.html">
+            
+                    
+                    7.5  Socket编程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.1.6" data-path="../d7z/7.6本章练习.html">
+            
+                <a href="../d7z/7.6本章练习.html">
+            
+                    
+                    7.6  本章练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="9.1" data-path="../d8z/d8z.html">
+            
+                <a href="../d8z/d8z.html">
+            
+                    
+                    第八章    Java注解
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="9.1.1" data-path="../d8z/8.1Java注解.html">
+            
+                <a href="../d8z/8.1Java注解.html">
+            
+                    
+                    8.1  Java注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.1.2" data-path="../d8z/8.2内建注解.html">
+            
+                <a href="../d8z/8.2内建注解.html">
+            
+                    
+                    8.2  内建注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.1.3" data-path="../d8z/8.3自定义注解.html">
+            
+                <a href="../d8z/8.3自定义注解.html">
+            
+                    
+                    8.3  自定义注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.1.4" data-path="../d8z/8.4本章练习.html">
+            
+                <a href="../d8z/8.4本章练习.html">
+            
+                    
+                    8.4  本章练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="10.1" data-path="../d9z/d9z.html">
+            
+                <a href="../d9z/d9z.html">
+            
+                    
+                    第九章    软件测试与JUnit
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="10.1.1" data-path="../d9z/9.1JUnit初探.html">
+            
+                <a href="../d9z/9.1JUnit初探.html">
+            
+                    
+                    9.1  JUnit初探
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.1.2" data-path="../d9z/9.2JUnit4应用.html">
+            
+                <a href="../d9z/9.2JUnit4应用.html">
+            
+                    
+                    9.2  JUnit4应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.1.3" data-path="../d9z/9.3本章练习.html">
+            
+                <a href="../d9z/9.3本章练习.html">
+            
+                    
+                    9.3  本章练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="11.1" data-path="../d10z/d10z.html">
+            
+                <a href="../d10z/d10z.html">
+            
+                    
+                    第十章    拓展阅读（选学）
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="11.1.1" data-path="../d10z/10.1排序算法.html">
+            
+                <a href="../d10z/10.1排序算法.html">
+            
+                    
+                    10.1  排序算法
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.1.2" data-path="../d10z/10.2常见比较.html">
+            
+                <a href="../d10z/10.2常见比较.html">
+            
+                    
+                    10.2  常见比较
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.1.3" data-path="../d10z/10.3软件测试.html">
+            
+                <a href="../d10z/10.3软件测试.html">
+            
+                    
+                    10.3  软件测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.1.4" data-path="../d10z/10.4线程死锁和协作.html">
+            
+                <a href="../d10z/10.4线程死锁和协作.html">
+            
+                    
+                    10.4  线程死锁和协作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.1.5" data-path="../d10z/10.5Java8新特性简介.html">
+            
+                <a href="../d10z/10.5Java8新特性简介.html">
+            
+                    
+                    10.5  Java 8新特性简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.1.6" data-path="../d10z/10.6本章练习.html">
+            
+                <a href="../d10z/10.6本章练习.html">
+            
+                    
+                    10.6  本章练习
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >6.4  共享数据</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h2 id="64--&#x5171;&#x4EAB;&#x6570;&#x636E;">6.4  &#x5171;&#x4EAB;&#x6570;&#x636E;</h2>
+<p>&#x2003;&#x2003;&#x524D;&#x9762;&#x770B;&#x5230;&#x7684;&#x591A;&#x7EBF;&#x7A0B;&#x7A0B;&#x5E8F;&#x4E2D;&#x5404;&#x4E2A;&#x7EBF;&#x7A0B;&#x5927;&#x591A;&#x90FD;&#x662F;&#x72EC;&#x7ACB;&#x8FD0;&#x884C;&#x7684;&#xFF0C;&#x4F46;&#x5728;&#x771F;&#x6B63;&#x7684;&#x5E94;&#x7528;&#x4E2D;&#xFF0C;&#x7A0B;&#x5E8F;&#x4E2D;&#x7684;&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;&#x901A;&#x5E38;&#x4EE5;&#x67D0;&#x79CD;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x901A;&#x4FE1;&#x6216;&#x5171;&#x4EAB;&#x6570;&#x636E;&#x3002;&#x5728;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x5FC5;&#x987B;&#x4F7F;&#x7528;&#x540C;&#x6B65;&#x673A;&#x5236;&#x6765;&#x786E;&#x4FDD;&#x6570;&#x503C;&#x88AB;&#x6B63;&#x786E;&#x5730;&#x4F20;&#x9012;&#xFF0C;&#x5E76;&#x9632;&#x6B62;&#x6570;&#x636E;&#x4E0D;&#x4E00;&#x81F4;&#x3002;</p>
+<h3 id="641--&#x6570;&#x636E;&#x4E0D;&#x4E00;&#x81F4;">6.4.1  &#x6570;&#x636E;&#x4E0D;&#x4E00;&#x81F4;</h3>
+<p>&#x2003;&#x2003;&#x9996;&#x5148;&#x6765;&#x770B;&#x8FD9;&#x6837;&#x4E00;&#x4E2A;&#x6848;&#x4F8B;&#xFF1A;</p>
+<pre><code>public class ShareData{
+
+static int data = 0;
+
+public static void main(String[] args){
+
+ShareThread1 st1 = new ShareThread1();
+
+ShareThread2 st2 = new ShareThread2();
+
+new Thread(st1).start();
+
+new Thread(st2).start();
+
+}
+
+//&#x5185;&#x90E8;&#x7C7B;&#xFF0C;&#x8BBF;&#x95EE;&#x7C7B;&#x4E2D;&#x9759;&#x6001;&#x6210;&#x5458;&#x53D8;&#x91CF;data
+
+private static class ShareThread1 implements Runnable{
+
+public void run() {
+
+while(data &lt; 10){
+
+try {
+
+Thread.sleep(1000);
+
+System.out.println(&quot;&#x8FD9;&#x4E2A;&#x5C0F;&#x4E8E;10&#x7684;&#x6570;&#x636E;&#x662F;&#xFF1A;&quot; + data++);
+
+} catch (InterruptedException e) {
+
+e.printStackTrace();
+
+}
+
+}
+
+}
+
+}
+
+//&#x5185;&#x90E8;&#x7C7B;&#xFF0C;&#x8BBF;&#x95EE;&#x7C7B;&#x4E2D;&#x9759;&#x6001;&#x6210;&#x5458;&#x53D8;&#x91CF;data
+
+private static class ShareThread2 implements Runnable{
+
+public void run() {
+
+while(data &lt; 100){
+
+data++;
+
+}
+
+}
+
+}
+
+}
+</code></pre><p>&#x2003;&#x2003;ShareData&#x7C7B;&#x4E2D;&#x6709;&#x4E24;&#x4E2A;&#x5185;&#x90E8;&#x7C7B;ShareThread1&#x548C;ShareThread2&#xFF0C;&#x8FD9;&#x4E24;&#x4E2A;&#x5185;&#x90E8;&#x7C7B;&#x90FD;&#x5171;&#x4EAB;&#x5E76;&#x8BBF;&#x95EE;ShareData&#x7C7B;&#x4E2D;&#x9759;&#x6001;&#x6210;&#x5458;&#x53D8;&#x91CF;data&#x3002;&#x5176;&#x4E2D;ShareThread1&#x7C7B;&#x7684;run()&#x65B9;&#x6CD5;&#x5224;&#x65AD;&#x5F53;data&#x5C0F;&#x4E8E;10&#x65F6;&#x8FDB;&#x884C;&#x8F93;&#x51FA;&#xFF0C;&#x4E0D;&#x8FC7;&#x5728;&#x8F93;&#x51FA;&#x524D;&#x901A;&#x8FC7;&#x8C03;&#x7528;sleep()&#x65B9;&#x6CD5;&#x7B49;&#x5F85;1&#x79D2;&#x3002;&#x800C;ShareThread2&#x7C7B;&#x7684;run()&#x65B9;&#x6CD5;&#x8BA9;data&#x5FAA;&#x73AF;&#x6267;&#x884C;&#x81EA;&#x52A0;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x76F4;&#x5230;data&#x4E0D;&#x5C0F;&#x4E8E;100&#x65F6;&#x505C;&#x6B62;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x7F16;&#x8BD1;&#x3001;&#x8FD0;&#x884C;&#x7A0B;&#x5E8F;&#xFF0C;&#x8F93;&#x51FA;&#x7ED3;&#x679C;&#x663E;&#x793A;&#x8FD9;&#x4E2A;&#x5C0F;&#x4E8E;10&#x7684;&#x6570;&#x636E;&#x662F;&#xFF1A;100&#xFF0C;&#x5F88;&#x660E;&#x663E;&#xFF0C;&#x8FD9;&#x5E76;&#x4E0D;&#x662F;&#x7A0B;&#x5E8F;&#x5E0C;&#x671B;&#x7684;&#x7ED3;&#x679C;&#x3002;&#x51FA;&#x73B0;&#x8FD9;&#x6837;&#x7ED3;&#x679C;&#x7684;&#x539F;&#x56E0;&#x662F;&#xFF0C;&#x5F53;ShareThread1&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#x5728;&#x5224;&#x65AD;data&lt;10&#x65F6;&#xFF0C;data&#x7684;&#x503C;&#x5C0F;&#x4E8E;10&#xFF0C;&#x6240;&#x4EE5;&#x80FD;&#x8FDB;&#x5165;run()&#x65B9;&#x6CD5;&#x7684;while&#x5FAA;&#x73AF;&#x5185;&#x3002;&#x4F46;&#x662F;&#x5F53;&#x8FDB;&#x5165;while&#x5FAA;&#x73AF;&#x540E;&#xFF0C;&#x5728;&#x8F93;&#x51FA;&#x524D;&#x9700;&#x8981;&#x7B49;&#x5F85;1&#x79D2;&#xFF0C;&#x5728;&#x8FD9;&#x4E2A;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;ShareThread2&#x7C7B;&#x7684;&#x5BF9;&#x8C61;&#x901A;&#x8FC7;run()&#x65B9;&#x6CD5;&#x4E0D;&#x505C;&#x5730;&#x8FDB;&#x884C;data&#x81EA;&#x52A0;&#x64CD;&#x4F5C;&#xFF0C;&#x76F4;&#x5230;data=100&#x4E3A;&#x6B62;&#x3002;&#x8FD9;&#x65F6;ShareThread1&#x7C7B;&#x5BF9;&#x8C61;&#x518D;&#x8F93;&#x51FA;&#xFF0C;&#x5176;&#x7ED3;&#x679C;&#x81EA;&#x7136;&#x662F;&#x8FD9;&#x4E2A;&#x5C0F;&#x4E8E;10&#x7684;&#x6570;&#x636E;&#x662F;&#xFF1A;100&#x3002;</p>
+<p>&#x2003;&#x2003;&#x8BE5;&#x6848;&#x4F8B;&#x8BF4;&#x660E;&#xFF0C;&#x5F53;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x88AB;&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;&#x5B58;&#x53D6;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x901A;&#x8FC7;&#x68C0;&#x67E5;&#x8FD9;&#x4E2A;&#x6570;&#x636E;&#x7684;&#x503C;&#x6765;&#x8FDB;&#x884C;&#x5224;&#x65AD;&#x5E76;&#x6267;&#x884C;&#x4E4B;&#x540E;&#x7684;&#x64CD;&#x4F5C;&#x662F;&#x6781;&#x4E0D;&#x5B89;&#x5168;&#x7684;&#x3002;&#x56E0;&#x4E3A;&#x5728;&#x5224;&#x65AD;&#x4E4B;&#x540E;&#xFF0C;&#x8FD9;&#x4E2A;&#x6570;&#x636E;&#x7684;&#x503C;&#x5F88;&#x53EF;&#x80FD;&#x88AB;&#x5176;&#x4ED6;&#x7EBF;&#x7A0B;&#x4FEE;&#x6539;&#x4E86;&#xFF0C;&#x5224;&#x65AD;&#x6761;&#x4EF6;&#x4E5F;&#x53EF;&#x80FD;&#x5DF2;&#x7ECF;&#x4E0D;&#x6210;&#x7ACB;&#x4E86;&#xFF0C;&#x4F46;&#x6B64;&#x65F6;&#x5DF2;&#x7ECF;&#x7ECF;&#x8FC7;&#x4E86;&#x5224;&#x65AD;&#xFF0C;&#x4E4B;&#x540E;&#x7684;&#x64CD;&#x4F5C;&#x8FD8;&#x9700;&#x8981;&#x7EE7;&#x7EED;&#x8FDB;&#x884C;&#x3002;</p>
+<h3 id="642--&#x63A7;&#x5236;&#x5171;&#x4EAB;&#x6570;&#x636E;">6.4.2  &#x63A7;&#x5236;&#x5171;&#x4EAB;&#x6570;&#x636E;</h3>
+<p>&#x2003;&#x2003;&#x4E0A;&#x9762;&#x7684;&#x6848;&#x4F8B;&#x4E2D;&#xFF0C;&#x5171;&#x4EAB;&#x6570;&#x636E;data&#x88AB;&#x4E0D;&#x540C;&#x7684;&#x7EBF;&#x7A0B;&#x5B58;&#x53D6;&#xFF0C;&#x51FA;&#x73B0;&#x4E86;&#x6570;&#x636E;&#x4E0D;&#x4E00;&#x81F4;&#x7684;&#x60C5;&#x51B5;&#x3002;&#x9488;&#x5BF9;&#x8FD9;&#x79CD;&#x60C5;&#x51B5;&#xFF0C;Java&#x63D0;&#x4F9B;&#x4E86;&#x540C;&#x6B65;&#x673A;&#x5236;&#xFF0C;&#x6765;&#x89E3;&#x51B3;&#x63A7;&#x5236;&#x5171;&#x4EAB;&#x6570;&#x636E;&#x7684;&#x95EE;&#x9898;&#xFF0C;Java&#x53EF;&#x4EE5;&#x4F7F;&#x7528;synchronized&#x5173;&#x952E;&#x5B57;&#x786E;&#x4FDD;&#x6570;&#x636E;&#x5728;&#x5404;&#x4E2A;&#x7EBF;&#x7A0B;&#x95F4;&#x6B63;&#x786E;&#x5171;&#x4EAB;&#x3002;&#x4FEE;&#x6539;&#x4E0A;&#x9762;&#x7684;&#x6848;&#x4F8B;&#xFF0C;&#x6CE8;&#x610F;synchronized&#x5173;&#x952E;&#x5B57;&#x7684;&#x4F7F;&#x7528;&#x3002;</p>
+<pre><code>public class ShareData2{
+
+static int data = 0;
+
+//&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x9501;&#x5BF9;&#x8C61;lock
+
+static final Object lock = new Object();
+
+public static void main(String[] args){
+
+ShareThread1 st1 = new ShareThread1();
+
+ShareThread2 st2 = new ShareThread2();
+
+new Thread(st1).start();
+
+new Thread(st2).start();
+
+}
+
+private static class ShareThread1 implements Runnable{
+
+public void run() {
+
+//&#x5BF9;lock&#x5BF9;&#x8C61;&#x4E0A;&#x9501;
+
+synchronized(lock){
+
+while(data &lt; 10){
+
+try {
+
+Thread.sleep(1000);
+
+System.out.println(&quot;&#x8FD9;&#x4E2A;&#x5C0F;&#x4E8E;10&#x7684;&#x6570;&#x636E;&#x662F;&#xFF1A;&quot; + data++);
+
+} catch (InterruptedException e) {
+
+e.printStackTrace();
+
+}
+
+}
+
+}
+
+}
+
+}
+
+private static class ShareThread2 implements Runnable{
+
+public void run() {       
+
+//&#x5BF9;lock&#x5BF9;&#x8C61;&#x4E0A;&#x9501;
+
+synchronized(lock){
+
+while(data &lt; 100){
+
+data++;
+
+}
+
+System.out.println(&quot;ShareThread2&#x6267;&#x884C;&#x5B8C;&#x540E;data&#x7684;&#x503C;&#x4E3A;&#xFF1A;&quot; + data);
+
+}
+
+}
+
+}
+
+}
+</code></pre><p>&#x2003;&#x2003;&#x7A0B;&#x5E8F;&#x4E2D;&#xFF0C;&#x9996;&#x5148;&#x5B9A;&#x4E49;&#x4E86;&#x4E00;&#x4E2A;&#x9759;&#x6001;&#x7684;&#x6210;&#x5458;&#x53D8;&#x91CF;lock&#xFF0C;&#x7136;&#x540E;&#x5728;ShareThread1&#x548C;ShareThread2&#x7C7B;&#x7684;run()&#x65B9;&#x6CD5;&#x91CC;&#xFF0C;&#x4F7F;&#x7528;synchronized(lock){&#x2026;}&#x4EE3;&#x7801;&#x5BF9;lock&#x5BF9;&#x8C61;&#x4E0A;&#x9501;&#xFF0C;&#x5176;&#x542B;&#x4E49;&#x4E3A;&#x4E00;&#x65E6;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x6267;&#x884C;&#x5230;synchronized(lock){&#x2026;}&#x4EE3;&#x7801;&#x5757;&#xFF0C;&#x5219;&#x9501;&#x4F4F;lock&#x5BF9;&#x8C61;&#xFF0C;&#x5176;&#x4ED6;&#x9488;&#x5BF9;lock&#x5BF9;&#x8C61;&#x4E0A;&#x9501;&#x7684;synchronized (lock){&#x2026;}&#x4EE3;&#x7801;&#x5757;&#x5C06;&#x4E0D;&#x5141;&#x8BB8;&#x88AB;&#x6267;&#x884C;&#xFF0C;&#x76F4;&#x5230;&#x4E4B;&#x524D;&#x8FD0;&#x884C;&#x7684;&#x4EE3;&#x7801;&#x5757;&#x8FD0;&#x884C;&#x7ED3;&#x675F;&#xFF0C;&#x91CA;&#x653E;lock&#x5BF9;&#x8C61;&#x9501;&#x540E;&#x5176;&#x4ED6;&#x4EE3;&#x7801;&#x5757;&#x624D;&#x5141;&#x8BB8;&#x6267;&#x884C;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x7F16;&#x8BD1;&#x3001;&#x8FD0;&#x884C;&#x7A0B;&#x5E8F;&#xFF0C;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x56FE;6.9&#x6240;&#x793A;&#x3002;</p>
+<p align="center"><img src="../../img/d6z/tu6.9.png"></p>  
+<p align="center">&#x56FE;6.9  &#x63A7;&#x5236;&#x5171;&#x4EAB;&#x6570;&#x636E;</p>  
+
+
+
+<h3 id="643--&#x591A;&#x7EBF;&#x7A0B;&#x540C;&#x6B65;">6.4.3  &#x591A;&#x7EBF;&#x7A0B;&#x540C;&#x6B65;</h3>
+<p>&#x2003;&#x2003;&#x591A;&#x7EBF;&#x7A0B;&#x540C;&#x6B65;&#x4F9D;&#x9760;&#x7684;&#x662F;&#x5BF9;&#x8C61;&#x9501;&#x673A;&#x5236;&#xFF0C;synchronized&#x5173;&#x952E;&#x5B57;&#x5C31;&#x662F;&#x5229;&#x7528;&#x9501;&#x6765;&#x5B9E;&#x73B0;&#x5BF9;&#x5171;&#x4EAB;&#x8D44;&#x6E90;&#x7684;&#x4E92;&#x65A5;&#x8BBF;&#x95EE;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x5B9E;&#x73B0;&#x591A;&#x7EBF;&#x7A0B;&#x540C;&#x6B65;&#x7684;&#x65B9;&#x6CD5;&#x4E4B;&#x4E00;&#x5C31;&#x662F;&#x540C;&#x6B65;&#x4EE3;&#x7801;&#x5757;&#xFF0C;&#x5176;&#x8BED;&#x6CD5;&#x5F62;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>synchronized(obj){
+
+//&#x540C;&#x6B65;&#x4EE3;&#x7801;&#x5757;
+
+}
+</code></pre><p>&#x2003;&#x2003;&#x8981;&#x60F3;&#x5B9E;&#x73B0;&#x7EBF;&#x7A0B;&#x7684;&#x540C;&#x6B65;&#xFF0C;&#x5219;&#x8FD9;&#x4E9B;&#x7EBF;&#x7A0B;&#x5FC5;&#x987B;&#x53BB;&#x7ADE;&#x4E89;&#x4E00;&#x4E2A;&#x552F;&#x4E00;&#x7684;&#x5171;&#x4EAB;&#x7684;&#x5BF9;&#x8C61;&#x9501;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x5148;&#x6765;&#x770B;&#x4E00;&#x4E2A;&#x6848;&#x4F8B;&#xFF0C;&#x8FD9;&#x4E2A;&#x6848;&#x4F8B;&#x7684;&#x4E3B;&#x7A0B;&#x5E8F;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;for&#x5FAA;&#x73AF;&#xFF0C;&#x521B;&#x5EFA;&#x3001;&#x542F;&#x52A8;5&#x4E2A;&#x7EBF;&#x7A0B;&#x5BF9;&#x8C61;&#xFF08;&#x4F20;&#x5165;&#x4E00;&#x4E2A;&#x53C2;&#x6570;&#x4F5C;&#x4E3A;&#x7EBF;&#x7A0B;id&#xFF09;&#xFF0C;&#x800C;&#x6BCF;&#x4E2A;&#x7EBF;&#x7A0B;&#x5BF9;&#x8C61;run()&#x65B9;&#x6CD5;&#x91CC;&#xFF0C;&#x518D;&#x901A;&#x8FC7;&#x4E00;&#x4E2A;for&#x5FAA;&#x73AF;&#x8F93;&#x51FA;1&#xFF5E;10&#x3002;</p>
+<pre><code>public class TestSyncThread
+
+{
+
+public static void main(String[] args)
+
+{
+
+for (int i = 0; i &lt; 5; i++)
+
+{
+
+new Thread(new SyncThread(i)).start();
+
+}
+
+}
+
+}
+
+class SyncThread implements java.lang.Runnable
+
+{
+
+private int tid;
+
+public SyncThread(int id)
+
+{
+
+this.tid = id;
+
+}
+
+public void run() 
+
+{
+
+for (int i = 0; i &lt; 10; i++)
+
+{
+
+System.out.println(&quot;&#x7EBF;&#x7A0B;ID&#x540D;&#x4E3A;: &quot; + this.tid + &quot;&#x6B63;&#x5728;&#x8F93;&#x51FA;&#xFF1A;&quot; + i);
+
+}
+
+}
+
+}
+</code></pre><p>&#x2003;&#x2003;&#x7F16;&#x8BD1;&#x3001;&#x8FD0;&#x884C;&#x4E0A;&#x9762;&#x7684;&#x7A0B;&#x5E8F;&#xFF0C;&#x4E94;&#x4E2A;&#x7EBF;&#x7A0B;&#x5404;&#x81EA;&#x8F93;&#x51FA;&#x3002;&#x5982;&#x679C;&#x5E0C;&#x671B;&#x4E94;&#x4E2A;&#x7EBF;&#x7A0B;&#x4E4B;&#x95F4;&#x4E0D;&#x51FA;&#x73B0;&#x4EA4;&#x53C9;&#x8F93;&#x51FA;&#x7684;&#x60C5;&#x51B5;&#xFF0C;&#x800C;&#x662F;&#x987A;&#x5E8F;&#x5730;&#x8F93;&#x51FA;&#xFF0C;&#x5373;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x8F93;&#x51FA;&#x5B8C;&#x518D;&#x5141;&#x8BB8;&#x53E6;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x8F93;&#x51FA;&#x65F6;&#xFF0C;&#x5219;&#x53EF;&#x901A;&#x8FC7;&#x4E0D;&#x540C;&#x7684;&#x5F62;&#x5F0F;&#xFF0C;&#x5B8C;&#x6210;&#x4E0A;&#x9762;&#x7684;&#x7EBF;&#x7A0B;&#x540C;&#x6B65;&#x7684;&#x8981;&#x6C42;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x4FEE;&#x6539;TestSyncThread&#x7C7B;&#xFF0C;&#x5728;&#x521B;&#x5EFA;&#x3001;&#x542F;&#x52A8;&#x7EBF;&#x7A0B;&#x4E4B;&#x524D;&#xFF0C;&#x5148;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x4E4B;&#x95F4;&#x7ADE;&#x4E89;&#x4F7F;&#x7528;&#x7684;&#x5BF9;&#x8C61;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x8FD9;&#x4E2A;&#x5BF9;&#x8C61;&#x7684;&#x5F15;&#x7528;&#x4F20;&#x9012;&#x7ED9;&#x6BCF;&#x4E2A;&#x7EBF;&#x7A0B;&#x5BF9;&#x8C61;&#x7684;lock&#x6210;&#x5458;&#x53D8;&#x91CF;&#x3002;&#x8FD9;&#x6837;&#x4E00;&#x6765;&#xFF0C;&#x6BCF;&#x4E2A;&#x7EBF;&#x7A0B;&#x7684;lock&#x6210;&#x5458;&#x53D8;&#x91CF;&#x90FD;&#x6307;&#x5411;&#x540C;&#x4E00;&#x4E2A;&#x5BF9;&#x8C61;&#xFF0C;&#x5728;&#x7EBF;&#x7A0B;&#x7684;run()&#x65B9;&#x6CD5;&#x4E2D;&#xFF0C;&#x5BF9;lock&#x5BF9;&#x8C61;&#x4F7F;&#x7528;synchronzied&#x5173;&#x952E;&#x5B57;&#x5BF9;&#x540C;&#x6B65;&#x4EE3;&#x7801;&#x5757;&#x8FDB;&#x884C;&#x5C40;&#x90E8;&#x5C01;&#x9501;&#xFF0C;&#x4ECE;&#x800C;&#x5B9E;&#x73B0;&#x540C;&#x6B65;&#xFF0C;&#x5177;&#x4F53;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>public class TestSyncThread2
+
+{
+
+public static void main(String[] args)
+
+{
+
+//&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x7EBF;&#x7A0B;&#x4E4B;&#x95F4;&#x7ADE;&#x4E89;&#x4F7F;&#x7528;&#x7684;&#x5BF9;&#x8C61;
+
+Object obj = new Object();
+
+for (int i = 0; i &lt; 5; i++)
+
+{
+
+new Thread(new SyncThread(i,obj)).start();
+
+}
+
+}
+
+}
+
+class SyncThread implements java.lang.Runnable
+
+{
+
+private int tid;
+
+private Object lock;
+
+//&#x6784;&#x9020;&#x65B9;&#x6CD5;&#x5F15;&#x5165;&#x7ADE;&#x4E89;&#x5BF9;&#x8C61;
+
+public SyncThread(int id, Object obj)
+
+{
+
+this.tid = id;
+
+this.lock = obj;
+
+}
+
+public void run() 
+
+{
+
+synchronized(lock){
+
+for (int i = 0; i &lt; 10; i++)
+
+{
+
+System.out.println(&quot;&#x7EBF;&#x7A0B;ID&#x540D;&#x4E3A;: &quot; + this.tid + &quot;&#x6B63;&#x5728;&#x8F93;&#x51FA;&#xFF1A;&quot; + i);
+
+}
+
+}
+
+}
+
+}
+</code></pre><p>&#x2003;&#x2003;&#x7F16;&#x8BD1;&#x3001;&#x8FD0;&#x884C;&#x7A0B;&#x5E8F;&#xFF0C;&#x5176;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x5982;&#x56FE;6.10&#x6240;&#x793A;&#x3002;</p>
+<p align="center"><img src="../../img/d6z/tu6.10.png"></p>  
+<p align="center">&#x56FE;6.10  &#x7EBF;&#x7A0B;&#x540C;&#x6B65;</p>  
+
+
+
+<p>&#x2003;&#x2003;&#x7EBF;&#x7A0B;&#x540C;&#x6B65;&#x7684;&#x5173;&#x952E;&#x5728;&#x4E8E;&#xFF0C;&#x591A;&#x4E2A;&#x7EBF;&#x7A0B;&#x7ADE;&#x4E89;&#x540C;&#x4E00;&#x4E2A;&#x5171;&#x4EAB;&#x8D44;&#x6E90;&#xFF0C;TestSyncThread2&#x7684;&#x4EE3;&#x7801;&#x4E2D;&#x662F;&#x901A;&#x8FC7;&#x521B;&#x5EFA;&#x5916;&#x90E8;&#x5171;&#x4EAB;&#x8D44;&#x6E90;&#xFF0C;&#x91C7;&#x7528;&#x5F15;&#x7528;&#x4F20;&#x9012;&#x8FD9;&#x4E2A;&#x5916;&#x90E8;&#x5171;&#x4EAB;&#x8D44;&#x6E90;&#x7684;&#x65B9;&#x5F0F;&#x6765;&#x5B9E;&#x73B0;&#x7ADE;&#x4E89;&#x540C;&#x4E00;&#x8D44;&#x6E90;&#x7684;&#x76EE;&#x7684;&#x7684;&#x3002;&#x5176;&#x5B9E;&#x8FD9;&#x4E2A;&#x5916;&#x90E8;&#x5171;&#x4EAB;&#x8D44;&#x6E90;&#x6CA1;&#x6709;&#x4EFB;&#x4F55;&#x610F;&#x4E49;&#xFF0C;&#x53EA;&#x662F;&#x8D77;&#x4E86;&#x4E00;&#x4E2A;&#x5171;&#x4EAB;&#x8D44;&#x6E90;&#x6807;&#x8BC6;&#x7684;&#x4F5C;&#x7528;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x901A;&#x8FC7;&#x4E0A;&#x9762;&#x7684;&#x65B9;&#x5F0F;&#x5B9E;&#x73B0;&#x7EBF;&#x7A0B;&#x540C;&#x6B65;&#x8FD8;&#x662F;&#x6BD4;&#x8F83;&#x9EBB;&#x70E6;&#x7684;&#xFF0C;&#x53EF;&#x4EE5;&#x5229;&#x7528;&#x7C7B;&#x53D8;&#x91CF;&#x88AB;&#x6240;&#x6709;&#x7C7B;&#x7684;&#x5B9E;&#x4F8B;&#x6240;&#x5171;&#x4EAB;&#x8FD9;&#x4E00;&#x7279;&#x6027;&#xFF0C;&#x5728;&#x7EBF;&#x7A0B;&#x7C7B;&#x5185;&#x90E8;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x9759;&#x6001;&#x5171;&#x4EAB;&#x8D44;&#x6E90;&#xFF0C;&#x901A;&#x8FC7;&#x5BF9;&#x8FD9;&#x4E2A;&#x5171;&#x4EAB;&#x8D44;&#x6E90;&#x7684;&#x7ADE;&#x4E89;&#x8D77;&#x5230;&#x7EBF;&#x7A0B;&#x540C;&#x6B65;&#x7684;&#x76EE;&#x7684;&#x3002;&#x5177;&#x4F53;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>public class TestSyncThread3
+
+{
+
+public static void main(String[] args)
+
+{
+
+for (int i = 0; i &lt; 5; i++)
+
+{
+
+new Thread(new SyncThread(i)).start();
+
+}
+
+}
+
+}
+
+class SyncThread implements java.lang.Runnable
+
+{
+
+private int tid;
+
+//&#x5728;&#x7EBF;&#x7A0B;&#x7C7B;&#x5185;&#x90E8;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x9759;&#x6001;&#x5171;&#x4EAB;&#x8D44;&#x6E90;lock
+
+private static Object lock = new Object();
+
+public SyncThread(int id)
+
+{
+
+this.tid = id;
+
+}
+
+public void run() 
+
+{
+
+synchronized(lock){
+
+for (int i = 0; i &lt; 10; i++)
+
+{
+
+System.out.println(&quot;&#x7EBF;&#x7A0B;ID&#x540D;&#x4E3A;: &quot; + this.tid + &quot;&#x6B63;&#x5728;&#x8F93;&#x51FA;&#xFF1A;&quot; + i);
+
+}
+
+}
+
+}
+
+}
+</code></pre><p>&#x2003;&#x2003;&#x6BD4;&#x8F83;TestSyncThread3&#x548C;TestSyncThread2&#x7684;&#x533A;&#x522B;&#xFF0C;&#x7A0B;&#x5E8F;&#x8FD0;&#x884C;&#x7ED3;&#x679C;&#x4E00;&#x6837;&#xFF0C;&#x4F46;&#x4EE3;&#x7801;&#x8FD8;&#x662F;&#x7B80;&#x5316;&#x4E86;&#x4E0D;&#x5C11;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x5B9E;&#x73B0;&#x591A;&#x7EBF;&#x7A0B;&#x540C;&#x6B65;&#x7684;&#x65B9;&#x6CD5;&#x4E4B;&#x4E8C;&#x5C31;&#x662F;&#x540C;&#x6B65;&#x65B9;&#x6CD5;&#xFF0C;&#x5176;&#x8BED;&#x6CD5;&#x5F62;&#x5F0F;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>
+&#x8BBF;&#x95EE;&#x4FEE;&#x9970;&#x7B26; synchronized &#x8FD4;&#x56DE;&#x7C7B;&#x578B; &#x65B9;&#x6CD5;&#x540D;{
+
+//&#x540C;&#x6B65;&#x65B9;&#x6CD5;&#x4F53;&#x5185;&#x4EE3;&#x7801;&#x5757;
+
+}
+</code></pre><p>&#x2003;&#x2003;&#x6BCF;&#x4E2A;&#x7C7B;&#x5B9E;&#x4F8B;&#x90FD;&#x5BF9;&#x5E94;&#x4E00;&#x628A;&#x9501;&#xFF0C;&#x6BCF;&#x4E2A;synchronized&#x65B9;&#x6CD5;<a href="#_msocom_4">[&#x5F20;&#x5F6C;4]</a> &#x90FD;&#x5FC5;&#x987B;&#x83B7;&#x5F97;&#x8C03;&#x7528;&#x8BE5;&#x65B9;&#x6CD5;&#x7684;&#x7C7B;&#x5B9E;&#x4F8B;&#x7684;&#x9501;&#x65B9;&#x80FD;&#x6267;&#x884C;&#xFF0C;&#x5426;&#x5219;&#x6240;&#x5C5E;&#x7EBF;&#x7A0B;&#x963B;&#x585E;&#x3002;synchronized&#x65B9;&#x6CD5;<a href="#_msocom_5">[&#x5F20;&#x5F6C;5]</a> &#x4E00;&#x65E6;&#x6267;&#x884C;&#xFF0C;&#x5C31;&#x72EC;&#x5360;&#x8BE5;&#x9501;&#xFF0C;&#x76F4;&#x5230;&#x8BE5;&#x65B9;&#x6CD5;&#x8FD4;&#x56DE;&#x65F6;&#x624D;&#x5C06;&#x9501;&#x91CA;&#x653E;&#xFF0C;&#x6B64;&#x540E;&#x88AB;&#x963B;&#x585E;&#x7684;&#x7EBF;&#x7A0B;&#x65B9;&#x80FD;&#x83B7;&#x5F97;&#x8BE5;&#x9501;&#xFF0C;&#x91CD;&#x65B0;&#x8FDB;&#x5165;&#x5C31;&#x7EEA;&#x72B6;&#x6001;&#x3002;&#x8FD9;&#x79CD;&#x673A;&#x5236;&#x786E;&#x4FDD;&#x4E86;&#x540C;&#x4E00;&#x65F6;&#x523B;&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A;&#x7C7B;&#x5B9E;&#x4F8B;&#xFF0C;&#x5176;&#x6240;&#x6709;&#x58F0;&#x660E;&#x4E3A; synchronized &#x7684;&#x65B9;&#x6CD5;&#x4E2D;&#x81F3;&#x591A;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x5904;&#x4E8E;&#x5C31;&#x7EEA;&#x72B6;&#x6001;&#xFF0C;&#x4ECE;&#x800C;&#x6709;&#x6548;&#x907F;&#x514D;&#x4E86;&#x7C7B;&#x6210;&#x5458;&#x53D8;&#x91CF;&#x7684;&#x8BBF;&#x95EE;&#x51B2;&#x7A81;&#x3002;</p>
+<p>&#x2003;&#x2003;&#x9488;&#x5BF9;&#x4E0A;&#x9762;&#x7684;&#x6848;&#x4F8B;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x7EBF;&#x7A0B;&#x7C7B;&#x4E2D;&#x5B9A;&#x4E49;&#x4E00;&#x4E2A;&#x9759;&#x6001;&#x65B9;&#x6CD5;&#xFF0C;&#x5E76;&#x5728;&#x7EBF;&#x7A0B;run()&#x65B9;&#x6CD5;&#x91CC;&#x8C03;&#x7528;&#x8FD9;&#x4E2A;&#x9759;&#x6001;&#x65B9;&#x6CD5;&#x3002;&#x9759;&#x6001;&#x65B9;&#x6CD5;&#x662F;&#x6240;&#x6709;&#x7C7B;&#x5B9E;&#x4F8B;&#x5BF9;&#x8C61;&#x6240;&#x5171;&#x4EAB;&#x7684;&#xFF0C;&#x6240;&#x4EE5;&#x6240;&#x6709;&#x7EBF;&#x7A0B;&#x5BF9;&#x8C61;&#x5728;&#x8BBF;&#x95EE;&#x6B64;&#x9759;&#x6001;&#x65B9;&#x6CD5;&#x65F6;&#x662F;&#x4E92;&#x65A5;&#x8BBF;&#x95EE;&#x7684;&#xFF0C;&#x4ECE;&#x800C;&#x5B9E;&#x73B0;&#x7EBF;&#x7A0B;&#x7684;&#x540C;&#x6B65;&#x3002;&#x5177;&#x4F53;&#x4EE3;&#x7801;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code>public class TestSyncThread4
+
+{
+
+public static void main(String[] args)
+
+{
+
+for (int i = 0; i &lt; 5; i++)
+
+{
+
+new Thread(new SyncThread(i)).start();
+
+}
+
+}
+
+}
+
+class SyncThread implements java.lang.Runnable
+
+{
+
+private int tid;
+
+public SyncThread(int id)
+
+{
+
+this.tid = id;
+
+}
+
+public void run() 
+
+{
+
+doTask(this.tid);
+
+}
+
+//&#x901A;&#x8FC7;&#x7C7B;&#x7684;&#x9759;&#x6001;&#x65B9;&#x6CD5;&#x5B9E;&#x73B0;&#x4E92;&#x65A5;&#x8BBF;&#x95EE;
+
+private static synchronized void doTask(int tid)
+
+{
+
+for (int i = 0; i &lt; 10; i++)
+
+{
+
+System.out.println(&quot;&#x7EBF;&#x7A0B;ID&#x540D;&#x4E3A;: &quot; + tid + &quot;&#x6B63;&#x5728;&#x8F93;&#x51FA;&#xFF1A;&quot; + i);
+
+}
+
+}
+
+}
+</code></pre>
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="6.3线程控制.html" class="navigation navigation-prev " aria-label="Previous page: 6.3  线程控制">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="6.5本章练习.html" class="navigation navigation-next " aria-label="Next page: 6.5  本章练习">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"6.4  共享数据","level":"7.1.4","depth":2,"next":{"title":"6.5  本章练习","level":"7.1.5","depth":2,"path":"chapters/d6z/6.5本章练习.md","ref":"chapters/d6z/6.5本章练习.md","articles":[]},"previous":{"title":"6.3  线程控制","level":"7.1.3","depth":2,"path":"chapters/d6z/6.3线程控制.md","ref":"chapters/d6z/6.3线程控制.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["livereload"],"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"chapters/d6z/6.4共享数据.md","mtime":"2020-04-22T08:40:46.042Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-04-22T08:59:26.287Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
