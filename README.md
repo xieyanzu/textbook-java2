@@ -1,4 +1,4 @@
-# Java核心API与高级编程实践
+# Java程序设计高级
 * [第一章    异常处理](chapters/d1z/d1z.md)
 	- [1.1  异常概述](chapters/d1z/1.1异常概述.md)
 	- [1.2  异常处理](chapters/d1z/1.2异常处理.md)
